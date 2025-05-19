@@ -1,0 +1,103 @@
+/* Стили для страницы Lezioni */
+.page-section {
+    min-height: 100vh;
+    padding: 100px 5% 50px;
+    background-color: #e8e0d2;
+}
+
+.two-column {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-column {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.bio-text h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.bio-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 500px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.feature-image:hover {
+    transform: scale(1.02);
+}
+
+.class-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.class-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.class-time {
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.class-description {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.instructor {
+    font-style: italic;
+    color: #888;
+}
+
+@media screen and (max-width: 768px) {
+    .two-column {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .content-column {
+        padding-right: 0;
+    }
+
+    .feature-image {
+        max-width: 100%;
+    }
+
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+}

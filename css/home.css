@@ -1,0 +1,62 @@
+/* Стили для домашней страницы */
+.page-section {
+    min-height: 100vh;
+    padding: 100px 5% 0;
+    background-color: #e8e0d2;
+    display: flex;
+    flex-direction: column;
+}
+
+#home {
+    background-color: #e8e0d2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 50px;
+}
+
+#home h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5c4f3d;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .hero-image {
+        max-width: 100%;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
