@@ -104,8 +104,18 @@ body {
 
 /* Медиа-запросы */
 @media screen and (max-width: 768px) {
+    .header {
+        padding: 0.5rem;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
     .menu-toggle {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .nav-menu {
@@ -119,19 +129,54 @@ body {
         padding: 1rem;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         gap: 1rem;
+        text-align: center;
     }
 
     .nav-menu.active {
         display: flex;
     }
+
+    .social-icons {
+        gap: 0.5rem;
+    }
+
+    .social-icons a {
+        width: 25px;
+        height: 25px;
+    }
+
+    .social-icons svg {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .social-buttons {
-        flex-direction: column;
+    .header {
+        padding: 0.3rem;
     }
 
-    .social-button {
-        text-align: center;
+    .logo {
+        height: 35px;
+    }
+
+    .social-icons {
+        gap: 0.3rem;
+    }
+
+    .social-icons a {
+        width: 22px;
+        height: 22px;
+    }
+
+    .social-icons svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .menu-toggle span {
+        width: 22px;
+        height: 2px;
+        margin: 4px 0;
     }
 }
