@@ -1,0 +1,6 @@
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
