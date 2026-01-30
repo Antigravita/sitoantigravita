@@ -1,9 +1,5 @@
 /* Стили для страницы Contatti */
-.page-section {
-    min-height: 100vh;
-    padding: 100px 5% 50px;
-    background-color: #e8e0d2;
-}
+
 
 .two-column {
     display: flex;
@@ -18,6 +14,16 @@
 .column {
     flex: 1;
     min-width: 300px;
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        min-width: 100%;
+    }
+    
+    .contact-card {
+        padding: 1.5rem;
+    }
 }
 
 .contact-info-column {

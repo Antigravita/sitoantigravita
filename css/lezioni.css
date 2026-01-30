@@ -1,9 +1,5 @@
 /* Стили для страницы Lezioni */
-.page-section {
-    min-height: 100vh;
-    padding: 100px 5% 50px;
-    background-color: #e8e0d2;
-}
+
 
 .two-column {
     display: flex;
@@ -23,7 +19,6 @@
 .bio-text h3 {
     color: #333;
     margin-bottom: 1.5rem;
-    font-size: 1.4rem;
 }
 
 .bio-text p {

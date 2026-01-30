@@ -1,9 +1,5 @@
 /* Стили для страницы Chi Siamo */
-.page-section {
-    min-height: 100vh;
-    padding: 100px 5% 50px;
-    background-color: #e8e0d2;
-}
+
 
 .two-column {
     display: flex;
