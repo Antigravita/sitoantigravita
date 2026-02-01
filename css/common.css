@@ -220,7 +220,7 @@ p { font-size: clamp(1rem, 2vw, 1.1rem); }
     justify-content: center;
 }
 
-.footer-info h3 {
+.footer-info h2 {
     color: #5c4f3d;
     margin-bottom: 1rem;
     font-size: 1.5rem;
@@ -232,7 +232,7 @@ p { font-size: clamp(1rem, 2vw, 1.1rem); }
 }
 
 .footer-info a {
-    color: #007bff;
+    color: #004494; /* Darker blue for better contrast (AAA) */
     text-decoration: none;
 }
 
