@@ -54,72 +54,50 @@
     color: #5c4f3d;
 }
 
-/* --- COLLAGE STYLE --- */
+/* --- COLLAGE STYLE (Simplified for Normal Visual Form) --- */
 .collage-container {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    /* Gap is handled by margins for overlap */
-    gap: 0; 
-    padding: 20px;
-    max-width: 660px; /* Increased by 20% from 550px */
-    margin: 0 auto; /* Center in its column */
-    position: sticky; /* Keep it in view if column is long */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 15px; /* Clean gap between images */
+    padding: 0;
+    max-width: 600px; 
+    margin: 0 auto; 
+    position: sticky; 
     top: 2rem;
 }
 
 .collage-img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Square format for harmony */
+    height: 100%; /* Fill the grid cell */
+    aspect-ratio: 9 / 16; /* Maintain vertical aspect ratio */
     object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    /* border removed */
-    transition: transform 0.3s ease, z-index 0s;
+    border-radius: 10px; /* Slightly reduced radius for cleaner look */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Softer shadow */
+    transition: transform 0.3s ease;
+    display: block; /* Remove inline spacing issues */
 }
 
 .collage-img:hover {
-    transform: scale(1.05);
-    z-index: 10 !important;
+    transform: scale(1.02); /* Subtle zoom on hover */
+    z-index: 10;
 }
 
-/* Image 1: Top Left */
-.collage-img:nth-child(1) {
-    transform: rotate(-2deg);
-    z-index: 1;
-    margin-bottom: -15px;
-    margin-right: -15px;
-}
-
-/* Image 2: Top Right */
-.collage-img:nth-child(2) {
-    transform: rotate(3deg) translateY(20px);
-    z-index: 2;
-    margin-bottom: -15px;
-    margin-left: -15px;
-}
-
-/* Image 3: Bottom Left */
-.collage-img:nth-child(3) {
-    transform: rotate(2deg) translateY(-10px);
-    z-index: 3;
-    margin-top: -15px;
-    margin-right: -15px;
-}
-
-/* Image 4: Bottom Right */
+/* Removed specific rotations and negative margins for a clean grid layout */
+.collage-img:nth-child(1),
+.collage-img:nth-child(2),
+.collage-img:nth-child(3),
 .collage-img:nth-child(4) {
-    transform: rotate(-1deg) translateY(10px);
-    z-index: 2; /* Below 3 slightly */
-    margin-top: -15px;
-    margin-left: -15px;
+    transform: none;
+    margin: 0;
+    z-index: 1;
 }
 
 /* --- RESPONSIVE --- */
 @media screen and (max-width: 960px) {
     .two-column {
-        flex-direction: column-reverse; /* Put text first on mobile usually, or images first? Let's keep images bottom or top. Column-reverse puts images on top if images are second in HTML? No, images are second div. Column-reverse puts images (2nd) on TOP. */
+        flex-direction: column-reverse; 
         gap: 2rem;
     }
     
@@ -129,9 +107,10 @@
 
     .collage-container {
         width: 100%;
-        max-width: 400px;
-        padding: 10px;
-        position: static; /* Remove sticky on mobile */
+        max-width: 100%; /* Allow full width on mobile */
+        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on mobile */
+        gap: 10px;
+        position: static; 
     }
 }
 
@@ -141,6 +120,7 @@
     }
     
     .collage-container {
-        max-width: 320px;
+        /* On very small screens, maybe just 2 columns still looks best for vertical images */
+        gap: 8px;
     }
 }
