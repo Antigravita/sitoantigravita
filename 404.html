@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Non Trovata (404) | AntiGravità Fly Yoga Trieste</title>
-    <meta name="description" content="Spiacenti, la pagina che stai cercando non esiste. Torna alla home page di AntiGravità Fly Yoga Trieste.">
+    <meta name="description" content="Spiacenti, la pagina che stai cercando non esiste. Torna alla home page di AntiGravità Fly Yoga Trieste per scoprire i nostri corsi e orari.">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://antigravitaflyyoga.it/404.html">
 
@@ -13,24 +13,176 @@
     <meta property="og:url" content="https://antigravitaflyyoga.it/404.html">
     <meta property="og:title" content="Pagina Non Trovata (404) | AntiGravità Fly Yoga Trieste">
     <meta property="og:description" content="Spiacenti, la pagina che stai cercando non esiste. Torna alla home page di AntiGravità Fly Yoga Trieste.">
-    <meta property="og:image" content="https://antigravitaflyyoga.it/images/logo.png">
+    <meta property="og:image" content="https://antigravitaflyyoga.it/images/logobrand.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://antigravitaflyyoga.it/404.html">
     <meta property="twitter:title" content="Pagina Non Trovata (404) | AntiGravità Fly Yoga Trieste">
     <meta property="twitter:description" content="Spiacenti, la pagina che stai cercando non esiste. Torna alla home page di AntiGravità Fly Yoga Trieste.">
-    <meta property="twitter:image" content="https://antigravitaflyyoga.it/images/logo.png">
+    <meta property="twitter:image" content="https://antigravitaflyyoga.it/images/logobrand.png">
     
     <link rel="icon" type="image/png" href="images/logobrand.png">
+    
+    <!-- Preload LCP Image -->
+    <link rel="preload" href="images/logobrand.png" as="image" fetchpriority="high">
+    
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/404.css">
+    
+    <style>
+        /* 404 Page Styles - Inlined for Performance */
+        .error-section {
+            min-height: calc(100vh - 80px - 300px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+            background-color: #f9fdfb;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .error-content-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            gap: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .error-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            line-height: 1;
+            font-weight: 800;
+            color: #003822;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .error-code::after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-color: rgba(0, 56, 34, 0.1);
+            border-radius: 5px;
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .error-description {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+            line-height: 1.8;
+        }
+
+        .error-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .error-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 56, 34, 0.15);
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+        }
+
+        .error-image img:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        /* Decorative Elements */
+        .decoration-circle {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(0, 56, 34, 0.05);
+            z-index: 0;
+        }
+
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            top: -50px;
+            right: -50px;
+        }
+
+        .circle-2 {
+            width: 150px;
+            height: 150px;
+            bottom: 50px;
+            left: 10%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .error-content-wrapper {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .error-text {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .error-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .error-image img {
+                max-width: 80%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .error-code {
+                font-size: 6rem;
+            }
+
+            .error-title {
+                font-size: 2rem;
+            }
+
+            .error-image img {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <div class="logo">
             <a href="/">
-                <img src="images/logo.png" alt="Logo Antigravita" width="230" height="61">
+                <img src="images/logo.png" alt="Logo Antigravita Fly Yoga" width="230" height="61">
             </a>
         </div>
         <div class="social-icons">
@@ -66,7 +218,7 @@
                     <a href="/" class="btn-prenota">Torna alla Home</a>
                 </div>
                 <div class="error-image">
-                    <img src="images/logobrand.png" alt="AntiGravità Fly Yoga Logo Brand" width="609" height="609">
+                    <img src="images/logobrand.png" alt="AntiGravità Fly Yoga Logo Brand" width="609" height="609" fetchpriority="high">
                 </div>
             </div>
         </section>
