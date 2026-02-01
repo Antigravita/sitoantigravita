@@ -63,22 +63,11 @@
     align-items: flex-start;
 }
 
-.slideshow-container {
-    width: 100%;
-    max-width: 500px;
-    position: relative;
-    margin: auto;
-}
-
-.slide {
+.fly-yoga-image {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: none;
-}
-
-.slide:first-child {
     display: block;
 }
 
@@ -92,12 +81,7 @@
         padding-right: 0;
     }
 
-    .slideshow-container {
-        max-width: 100%;
-        margin-top: 2rem;
-    }
-
-    .slide {
+    .fly-yoga-image {
         max-width: 100%;
         height: auto;
     }

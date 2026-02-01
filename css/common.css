@@ -261,6 +261,43 @@ p { font-size: clamp(1rem, 2vw, 1.1rem); }
     border: 0;
 }
 
+/* Footer Map Facade */
+.footer-map, .map-container {
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+}
+
+.map-placeholder-content {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    max-width: 80%;
+}
+
+.map-placeholder-content p {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+}
+
 /* Медиа-запросы */
 @media screen and (max-width: 1024px) {
     .page-section {

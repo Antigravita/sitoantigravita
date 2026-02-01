@@ -143,9 +143,39 @@ const initFaq = () => {
     });
 };
 
+// Lazy Load Map
+window.loadMap = (element) => {
+    const src = element.getAttribute('data-src');
+    const title = element.getAttribute('data-title');
+    
+    // Create iframe
+    const iframe = document.createElement('iframe');
+    iframe.src = src;
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.style.border = "0";
+    iframe.allowFullscreen = "";
+    iframe.loading = "lazy";
+    iframe.referrerPolicy = "no-referrer-when-downgrade";
+    iframe.title = title || "Google Maps";
+    
+    // Replace placeholder with iframe
+    const parent = element.parentNode;
+    
+    // Fade out placeholder
+    element.style.opacity = '0';
+    
+    setTimeout(() => {
+        // Clear parent content (remove placeholder) and append iframe
+        // But we need to keep the parent container size
+        parent.innerHTML = '';
+        parent.appendChild(iframe);
+    }, 300);
+};
+
 // Инициализация всех интерактивных элементов
 document.addEventListener('DOMContentLoaded', () => {
-    initSlideshow();
+    // initSlideshow(); // Disabled as we removed the slider
     initImageModal();
     initSmoothScroll();
     initFaq();

@@ -70,7 +70,7 @@
 
 .collage-img {
     width: 100%;
-    height: auto; /* Allow natural height to prevent stretching perception */
+    aspect-ratio: 3/4; /* Standardize aspect ratio to prevent "stretched" look */
     object-fit: cover;
     border-radius: 10px; /* Slightly reduced radius for cleaner look */
     box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Softer shadow */
