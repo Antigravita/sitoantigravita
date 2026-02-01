@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="images/logobrand.png">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="canonical" href="https://antigravitaflyyoga.it/">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -123,11 +124,30 @@
             
             <div class="content-wrapper">
                 <div class="video-container">
-                    <video autoplay loop muted playsinline class="hero-video" preload="none">
-                        <source src="Video/hero-video.mp4" type="video/mp4">
+                    <video id="hero-video" loop muted playsinline class="hero-video" poster="images/yoga-trieste-fly.png" preload="none">
+                        <!-- Video source loaded via JS -->
                     </video>
                 </div>
             </div>
+            <script>
+                window.addEventListener('load', function() {
+                    // Defer video loading to ensure it doesn't affect PageSpeed
+                    setTimeout(function() {
+                        var video = document.getElementById('hero-video');
+                        var source = document.createElement('source');
+                        source.src = 'Video/hero-video.mp4';
+                        source.type = 'video/mp4';
+                        video.appendChild(source);
+                        video.load();
+                        var playPromise = video.play();
+                        if (playPromise !== undefined) {
+                            playPromise.catch(function(error) {
+                                console.log('Auto-play was prevented:', error);
+                            });
+                        }
+                    }, 1500);
+                });
+            </script>
 
             <div class="checkerboard-section">
                 <!-- Row 1: Text - Image -->
