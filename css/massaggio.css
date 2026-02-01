@@ -70,8 +70,7 @@
 
 .collage-img {
     width: 100%;
-    height: 100%; /* Fill the grid cell */
-    aspect-ratio: 9 / 16; /* Maintain vertical aspect ratio */
+    height: auto; /* Allow natural height to prevent stretching perception */
     object-fit: cover;
     border-radius: 10px; /* Slightly reduced radius for cleaner look */
     box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Softer shadow */

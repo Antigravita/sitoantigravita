@@ -44,6 +44,7 @@ body {
 
 .logo img {
     height: 100%;
+    width: auto; /* Fix aspect ratio */
 }
 
 /* Социальные иконки */
@@ -61,10 +62,12 @@ body {
     height: 40px;
     background-color: #f5f5f5;
     border-radius: 50%;
-    color: #333;
+    color: #333; /* Default icon color */
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Ensure no underline on icons */
 }
 
+/* Ensure contrast for social icons */
 .social-icons a:hover {
     background-color: #e0e0e0;
 }
