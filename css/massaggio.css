@@ -1,6 +1,5 @@
 /* Стили для страницы массажа */
 
-
 .massage-list ul {
     list-style: none;
     padding: 0;
@@ -20,25 +19,7 @@
     margin-top: 1rem;
 }
 
-.secondary-img {
-    margin-top: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-@media screen and (max-width: 768px) {
-    #massaggio h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #massaggio h2 {
-        font-size: 1.8rem;
-    }
-}
-
+/* Layout generale a due colonne */
 .two-column {
     display: flex;
     gap: 4rem;
@@ -73,54 +54,93 @@
     color: #5c4f3d;
 }
 
-.bio-text ul {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
-}
-
-.bio-text li {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-}
-
-.image-column {
+/* --- COLLAGE STYLE --- */
+.collage-container {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    align-content: start;
+    grid-template-rows: repeat(2, auto);
+    /* Gap is handled by margins for overlap */
+    gap: 0; 
+    padding: 20px;
+    max-width: 660px; /* Increased by 20% from 550px */
+    margin: 0 auto; /* Center in its column */
+    position: sticky; /* Keep it in view if column is long */
+    top: 2rem;
 }
 
-.image-column img {
+.collage-img {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1 / 1; /* Square format for harmony */
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    /* border removed */
+    transition: transform 0.3s ease, z-index 0s;
 }
 
-.image-column img:hover {
-    transform: scale(1.03);
+.collage-img:hover {
+    transform: scale(1.05);
+    z-index: 10 !important;
 }
 
-.image-column img:first-child {
-    grid-column: 1 / -1;
-    aspect-ratio: 4/3;
+/* Image 1: Top Left */
+.collage-img:nth-child(1) {
+    transform: rotate(-2deg);
+    z-index: 1;
+    margin-bottom: -15px;
+    margin-right: -15px;
 }
 
-@media screen and (max-width: 768px) {
+/* Image 2: Top Right */
+.collage-img:nth-child(2) {
+    transform: rotate(3deg) translateY(20px);
+    z-index: 2;
+    margin-bottom: -15px;
+    margin-left: -15px;
+}
+
+/* Image 3: Bottom Left */
+.collage-img:nth-child(3) {
+    transform: rotate(2deg) translateY(-10px);
+    z-index: 3;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+
+/* Image 4: Bottom Right */
+.collage-img:nth-child(4) {
+    transform: rotate(-1deg) translateY(10px);
+    z-index: 2; /* Below 3 slightly */
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 960px) {
     .two-column {
-        flex-direction: column;
+        flex-direction: column-reverse; /* Put text first on mobile usually, or images first? Let's keep images bottom or top. Column-reverse puts images on top if images are second in HTML? No, images are second div. Column-reverse puts images (2nd) on TOP. */
         gap: 2rem;
     }
-
+    
     .content-column {
         padding-right: 0;
     }
 
-    .feature-image {
-        max-width: 100%;
+    .collage-container {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        position: static; /* Remove sticky on mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bio-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .collage-container {
+        max-width: 320px;
     }
 }

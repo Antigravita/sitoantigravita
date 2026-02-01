@@ -114,9 +114,39 @@ const initSmoothScroll = () => {
     });
 };
 
+// FAQ Accordion
+const initFaq = () => {
+    const questions = document.querySelectorAll('.faq-question');
+    
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            
+            // Toggle active class on question
+            question.classList.toggle('active');
+            
+            // Toggle max-height for answer animation
+            if (question.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            } else {
+                answer.style.maxHeight = 0;
+            }
+            
+            // Close other items (Accordion behavior - optional, but user asked for harmony)
+            questions.forEach(q => {
+                if (q !== question && q.classList.contains('active')) {
+                    q.classList.remove('active');
+                    q.nextElementSibling.style.maxHeight = 0;
+                }
+            });
+        });
+    });
+};
+
 // Инициализация всех интерактивных элементов
 document.addEventListener('DOMContentLoaded', () => {
     initSlideshow();
     initImageModal();
     initSmoothScroll();
+    initFaq();
 });
