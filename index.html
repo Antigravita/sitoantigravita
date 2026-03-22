@@ -6,10 +6,13 @@
     <title>Yoga Trieste e Massaggi Trieste | Centro AntiGravità</title>
     <meta name="description" content="Scopri il miglior centro Yoga Trieste e Massaggi Trieste: Corsi di Fly Yoga e trattamenti olistici per il tuo benessere. Prenota ora.">
     <link rel="icon" type="image/png" href="images/logobrand.png">
+    <link rel="apple-touch-icon" href="images/logobrand.png">
+    <meta name="theme-color" content="#003822">
+    <meta property="og:locale" content="it_IT">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="canonical" href="https://antigravitaflyyoga.it/">
-    <link rel="preload" as="image" href="images/yoga-trieste-fly.jpg">
+    <link rel="preload" as="image" href="images/yoga-trieste-fly.webp">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -28,11 +31,11 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Yoga Trieste e Massaggi Trieste | Centro AntiGravità",
-      "description": "Benvenuti in AntiGravità Fly Yoga Trieste. Corsi di Fly Yoga, Yoga in volo, e Massaggi a Trieste. Migliora il tuo benessere fisico e mentale con noi.",
-      "image": "https://antigravitaflyyoga.it/images/logo.png",
+      "@type": ["YogaStudio", "HealthAndBeautyBusiness"],
       "@id": "https://antigravitaflyyoga.it",
+      "name": "AntiGravità Fly Yoga Trieste",
+      "description": "Centro specializzato in Fly Yoga e Massaggi a Trieste. Corsi di gruppo e individuali, trattamenti olistici e Fly Massage esclusivo. Via Jacopo Cavalli 10/c, Trieste.",
+      "image": "https://antigravitaflyyoga.it/images/logo.png",
       "url": "https://antigravitaflyyoga.it",
       "telephone": "+39 351 857 3757",
       "email": "AntiGravita.Fly@gmail.com",
@@ -41,7 +44,7 @@
         "@type": "PostalAddress",
         "streetAddress": "Via Jacopo Cavalli 10/c",
         "addressLocality": "Trieste",
-        "postalCode": "34123",
+        "postalCode": "34129",
         "addressCountry": "IT"
       },
       "geo": {
@@ -51,57 +54,93 @@
       },
       "sameAs": [
         "https://www.facebook.com/people/Antigravita-Fly-yoga/61557041365775/",
-        "https://www.instagram.com/antigravita_flyyoga/#",
-        "https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu"
+        "https://www.instagram.com/antigravita_flyyoga/",
+        "https://youtube.com/@antigravitaflyyoga"
       ],
-      "areaServed": {
-        "@type": "City",
-        "name": "Trieste"
-      },
-      "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.4876714559383!2d13.776899776191611!3d45.642431621012325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b7a62660a93%3A0x4611b97f6c66433!2sVia%20Jacopo%20Cavalli%2C%2010%2C%2034124%20Trieste%20TS%2C%20Italy!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s",
+      "areaServed": { "@type": "City", "name": "Trieste" },
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
           "opens": "09:00",
           "closes": "20:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servizi AntiGravità",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fly Yoga Trieste", "url": "https://antigravitaflyyoga.it/fly-yoga-trieste"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Corsi di Yoga Trieste", "url": "https://antigravitaflyyoga.it/corsi-yoga-trieste"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Massaggi Trieste", "url": "https://antigravitaflyyoga.it/massaggi-trieste"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fly Massage Trieste"}}
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "27",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Cosa offre il Centro AntiGravità a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "AntiGravità è l’unico centro a Trieste specializzato in Fly Yoga (yoga in amaca) e Massaggi olistici. Offriamo corsi di gruppo e individuali di Fly Yoga, massaggi decontratturanti, rilassanti, olistici e il Fly Massage — un trattamento esclusivo in sospensione, unico a Trieste."}
+        },
+        {
+          "@type": "Question",
+          "name": "Qual è la differenza tra Fly Yoga e Yoga tradizionale a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Lo yoga tradizionale si pratica a terra. Il Fly Yoga Trieste utilizza un’amaca speciale per eseguire posizioni in sospensione: questo permette la decompressione vertebrale, inversioni terapeutiche e un rilassamento profondo impossibile da raggiungere sul tappetino. È adatto a tutti i livelli."}
+        },
+        {
+          "@type": "Question",
+          "name": "Il Fly Yoga Trieste è adatto ai principianti?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Assolutamente sì. Le lezioni di Fly Yoga a Trieste sono strutturate con progressioni graduali. L’amaca sostiene il corpo e facilita le posizioni, rendendo la pratica sicura e accessibile anche a chi non ha mai fatto yoga. Ogni gruppo ha un massimo di 8 posti per garantire attenzione individuale."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quali massaggi offrite a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Offriamo una gamma completa di massaggi a Trieste: Massaggio Olistico, Decontratturante, Modellante, Antistress, Drenante, Riflessologia Plantare, Hot Stone (Pietre Calde) e il Fly Massage — trattamento in amaca unico a Trieste. Ogni trattamento è personalizzato sulle tue esigenze."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto costano i corsi di Fly Yoga e i massaggi a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "L’entrata singola a un corso di Fly Yoga costa 20€. Gli abbonamenti mensili partono da 60€ (4 lezioni). Le lezioni private partono da 40€. Per i prezzi completi di tutti i servizi yoga e massaggi visita la pagina Prezzi del nostro sito."}
+        },
+        {
+          "@type": "Question",
+          "name": "Come prenotare una lezione di Yoga o un massaggio a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Puoi prenotare facilmente via WhatsApp al +39 351 857 3757 oppure su Instagram @antigravita_flyyoga. Clicca il pulsante Prenota online in alto. Ti risponderemo rapidamente per confermare giorno e orario, sia per le lezioni di Fly Yoga che per i massaggi a Trieste."}
         }
       ]
     }
     </script>
-    <!-- ✅ SEO: FAQPage (aggiunta) -->
     <script type="application/ld+json">
     {
-      "@context":"https://schema.org",
-      "@type":"FAQPage",
-      "mainEntity":[
-        {
-          "@type":"Question",
-          "name":"Come prenotare Fly Yoga a Trieste?",
-          "acceptedAnswer":{"@type":"Answer","text":"Puoi prenotare facilmente su WhatsApp con il pulsante “Prenota online”. Ti rispondiamo rapidamente e confermiamo giorno e orario."}
-        },
-        {
-          "@type":"Question",
-          "name":"Fly Yoga è adatto ai principianti?",
-          "acceptedAnswer":{"@type":"Answer","text":"Sì. Le lezioni di Fly Yoga a Trieste sono strutturate per principianti e livelli avanzati, con progressioni sicure e assistenza dell’insegnante."}
-        },
-        {
-          "@type":"Question",
-          "name":"Che differenza c’è tra Yoga a Trieste e Fly Yoga Trieste?",
-          "acceptedAnswer":{"@type":"Answer","text":"Lo Yoga a Trieste include pratiche a terra tradizionali. Il Fly Yoga Trieste utilizza l’amaca per esercizi in sospensione, con focus su decompressione, mobilità e controllo."}
-        },
-        {
-          "@type":"Question",
-          "name":"Fate massaggio a Trieste e massaggi a Trieste su appuntamento?",
-          "acceptedAnswer":{"@type":"Answer","text":"Sì. Offriamo massaggio a Trieste e massaggi a Trieste su appuntamento: decontratturante, relax e trattamenti personalizzati. Prenotazione via WhatsApp."}
-        }
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Yoga Trieste e Massaggi Trieste | Centro AntiGravità",
+      "url": "https://antigravitaflyyoga.it",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".subtitle", ".faq-section"]
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://antigravitaflyyoga.it"}
       ]
     }
     </script>
@@ -126,13 +165,13 @@
             <a href="https://www.facebook.com/people/Antigravita-Fly-yoga/61557041365775/" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Facebook">
                 <svg><use href="images/social-icons.svg#facebook"></use></svg>
             </a>
-            <a href="https://www.instagram.com/antigravita_flyyoga/#" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Instagram">
+            <a href="https://www.instagram.com/antigravita_flyyoga/" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Instagram">
                 <svg><use href="images/social-icons.svg#instagram"></use></svg>
             </a>
             <a href="https://wa.me/message/JEWWIAPMS4LUH1" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">
                 <svg><use href="images/social-icons.svg#whatsapp"></use></svg>
             </a>
-            <a href="https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu" target="_blank" rel="noopener noreferrer" aria-label="Guarda i nostri video su YouTube">
+            <a href="https://youtube.com/@antigravitaflyyoga" target="_blank" rel="noopener noreferrer" aria-label="Guarda i nostri video su YouTube">
                 <svg><use href="images/social-icons.svg#youtube"></use></svg>
             </a>
         </div>
@@ -278,30 +317,79 @@
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="faq-container">
-                <h2>Domande Frequenti</h2>
+                <h2>Domande Frequenti — Yoga e Massaggi Trieste</h2>
                 <div class="faq-item">
-                    <button class="faq-question">Quali corsi Yoga Trieste offrite?</button>
+                    <button class="faq-question">Cosa offre il Centro AntiGravità a Trieste?</button>
                     <div class="faq-answer">
-                        <p>Nel nostro centro offriamo corsi di <strong>Fly Yoga Trieste</strong> (in sospensione sull'amaca) e sessioni di meditazione. I nostri corsi sono pensati per tutti i livelli, dai principianti agli esperti.</p>
+                        <p>AntiGravità è l'unico centro a Trieste specializzato in <strong>Fly Yoga</strong> (yoga in amaca) e <strong>Massaggi olistici</strong>. Offriamo corsi di gruppo e individuali di Fly Yoga, massaggi decontratturanti, rilassanti, olistici e il <strong>Fly Massage</strong> — un trattamento esclusivo in sospensione, unico a Trieste.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">Il Fly Yoga è adatto ai principianti?</button>
+                    <button class="faq-question">Qual è la differenza tra Fly Yoga e Yoga tradizionale a Trieste?</button>
                     <div class="faq-answer">
-                        <p>Assolutamente sì! Le nostre lezioni di <strong>Fly Yoga Trieste</strong> sono strutturate con progressioni graduali. L'amaca sostiene il corpo e facilita le posizioni, rendendo la pratica accessibile e sicura anche per chi non ha mai fatto yoga.</p>
+                        <p>Lo yoga tradizionale si pratica a terra. Il <strong>Fly Yoga Trieste</strong> utilizza un'amaca speciale per eseguire posizioni in sospensione: questo permette la decompressione vertebrale, inversioni terapeutiche e un rilassamento profondo impossibile da raggiungere sul tappetino. È adatto a tutti i livelli.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">Che tipi di Massaggi Trieste posso prenotare?</button>
+                    <button class="faq-question">Il Fly Yoga Trieste è adatto ai principianti?</button>
                     <div class="faq-answer">
-                        <p>Offriamo una vasta gamma di trattamenti: dal <strong>Massaggio Olistico</strong> rilassante al Massaggio Decontratturante profondo, fino al drenante e al <strong>Fly Massaggi Trieste</strong>. Ogni trattamento è personalizzato sulle tue esigenze.</p>
+                        <p>Assolutamente sì. Le lezioni di <strong>Fly Yoga a Trieste</strong> sono strutturate con progressioni graduali. L'amaca sostiene il corpo e facilita le posizioni, rendendo la pratica sicura anche a chi non ha mai fatto yoga. Ogni gruppo ha un massimo di 8 posti per garantire attenzione individuale.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">Come posso prenotare una lezione o un massaggio?</button>
+                    <button class="faq-question">Quali massaggi offrite a Trieste?</button>
                     <div class="faq-answer">
-                        <p>Puoi prenotare facilmente cliccando sul pulsante "Prenota online" che ti porterà direttamente al nostro contatto WhatsApp. Ti risponderemo in breve tempo per confermare il tuo appuntamento.</p>
+                        <p>Offriamo una gamma completa di <strong>massaggi a Trieste</strong>: Massaggio Olistico, Decontratturante, Modellante, Antistress, Drenante, Riflessologia Plantare, Hot Stone e il <strong>Fly Massage</strong> — trattamento in amaca unico a Trieste. Ogni trattamento è personalizzato sulle tue esigenze.</p>
                     </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Quanto costano i corsi di Fly Yoga e i massaggi a Trieste?</button>
+                    <div class="faq-answer">
+                        <p>L'entrata singola a un corso di <strong>Fly Yoga</strong> costa 20€. Gli abbonamenti mensili partono da 60€ (4 lezioni). Le lezioni private partono da 40€. Per il listino completo di yoga e massaggi visita la nostra pagina <a href="/prezzi" style="color:#003822;font-weight:bold;">Prezzi</a>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Come prenotare una lezione di Yoga o un massaggio a Trieste?</button>
+                    <div class="faq-answer">
+                        <p>Puoi prenotare facilmente via <strong>WhatsApp</strong> al +39 351 857 3757 oppure su <strong>Instagram</strong> @antigravita_flyyoga. Clicca il pulsante <em>Prenota online</em> in alto. Ti risponderemo rapidamente per confermare giorno e orario, sia per i corsi di Fly Yoga che per i massaggi a Trieste.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews Section -->
+            <div style="max-width:900px;margin:3rem auto 0;text-align:center;">
+                <h2 style="color:#003822;margin-bottom:0.5rem;">⭐ 5,0 su Google — 27 Recensioni Verificate</h2>
+                <p style="color:#555;margin-bottom:2rem;">Cosa dicono i nostri studenti e clienti di massaggi a Trieste</p>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;text-align:left;">
+                    <div style="background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.08);">
+                        <div style="color:#f5a623;font-size:1.1rem;margin-bottom:0.5rem;">★★★★★</div>
+                        <p style="color:#333;font-size:.95rem;line-height:1.6;margin-bottom:0.75rem;">"Ho iniziato il Fly Yoga a gennaio e non riesco più a smettere. Anna è un'istruttrice competente che aiuta ogni studente a raggiungere il benessere fisico e mentale completo."</p>
+                        <p style="color:#888;font-size:.85rem;font-weight:600;">— Alessia C., Google</p>
+                    </div>
+                    <div style="background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.08);">
+                        <div style="color:#f5a623;font-size:1.1rem;margin-bottom:0.5rem;">★★★★★</div>
+                        <p style="color:#333;font-size:.95rem;line-height:1.6;margin-bottom:0.75rem;">"Ambiente pulito e accogliente che trasmette subito calma e benessere. Il Fly Yoga mi ha cambiato — divertente, sfidante e benefico per tutto il corpo."</p>
+                        <p style="color:#888;font-size:.85rem;font-weight:600;">— Chiara M., Google</p>
+                    </div>
+                    <div style="background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.08);">
+                        <div style="color:#f5a623;font-size:1.1rem;margin-bottom:0.5rem;">★★★★★</div>
+                        <p style="color:#333;font-size:.95rem;line-height:1.6;margin-bottom:0.75rem;">"Ho provato il Fly Yoga perché mi incuriosiva. Le lezioni vengono spiegate con calma e professionalità. Mi sono sentita completamente rigenerata."</p>
+                        <p style="color:#888;font-size:.85rem;font-weight:600;">— Luiz D., Google</p>
+                    </div>
+                </div>
+                <p style="margin-top:1.5rem;"><a href="https://www.google.com/maps/search/AntiGravita+Fly+Yoga+Massaggi+Trieste" target="_blank" rel="noopener noreferrer" style="color:#003822;font-weight:bold;text-decoration:underline;">Leggi tutte le recensioni su Google →</a></p>
+            </div>
+
+            <!-- Internal Linking Section -->
+            <div class="internal-links" style="text-align: center; margin-top: 2rem; padding-bottom: 2rem;">
+                <p>Esplora i nostri servizi:</p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                    <a href="/fly-yoga-trieste" style="color: #003822; font-weight: bold; text-decoration: underline;">Fly Yoga Trieste</a>
+                    <a href="/corsi-yoga-trieste" style="color: #003822; font-weight: bold; text-decoration: underline;">Orari Corsi</a>
+                    <a href="/massaggi-trieste" style="color: #003822; font-weight: bold; text-decoration: underline;">Massaggi Trieste</a>
+                    <a href="/prezzi" style="color: #003822; font-weight: bold; text-decoration: underline;">Prezzi</a>
+                    <a href="/chi-siamo" style="color: #003822; font-weight: bold; text-decoration: underline;">Chi Siamo</a>
+                    <a href="/contatti" style="color: #003822; font-weight: bold; text-decoration: underline;">Contatti</a>
                 </div>
             </div>
         </section>
@@ -311,15 +399,15 @@
         <div class="footer-content">
             <div class="footer-info">
                 <h3>AntiGravità Fly Yoga</h3>
-                <p><strong>Indirizzo:</strong> Via Jacopo Cavalli 10/c, 34123 Trieste</p>
+                <p><strong>Indirizzo:</strong> Via Jacopo Cavalli 10/c, 34129 Trieste</p>
                 <p><strong>Telefono:</strong> +39 351 857 3757</p>
                 <p><strong>Email:</strong> <a href="mailto:AntiGravita.Fly@gmail.com">AntiGravita.Fly@gmail.com</a></p>
-                <p><strong>Orari:</strong> Vedi <a href="corsi-yoga-trieste">Corsi Yoga Trieste</a></p>
+                <p><strong>Orari:</strong> Vedi <a href="/corsi-yoga-trieste">Corsi Yoga Trieste</a></p>
                 <div class="social-icons footer-social">
                     <a aria-label="Seguici su Facebook" href="https://www.facebook.com/people/Antigravita-Fly-yoga/61557041365775/" target="_blank" rel="noopener noreferrer"><svg><use href="images/social-icons.svg#facebook"></use></svg></a>
-                    <a aria-label="Seguici su Instagram" href="https://www.instagram.com/antigravita_flyyoga/#" target="_blank" rel="noopener noreferrer"><svg><use href="images/social-icons.svg#instagram"></use></svg></a>
+                    <a aria-label="Seguici su Instagram" href="https://www.instagram.com/antigravita_flyyoga/" target="_blank" rel="noopener noreferrer"><svg><use href="images/social-icons.svg#instagram"></use></svg></a>
                     <a aria-label="Contattaci su WhatsApp" href="https://wa.me/message/JEWWIAPMS4LUH1" target="_blank" rel="noopener noreferrer"><svg><use href="images/social-icons.svg#whatsapp"></use></svg></a>
-                    <a aria-label="Guarda i nostri video su YouTube" href="https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu" target="_blank" rel="noopener noreferrer"><svg><use href="images/social-icons.svg#youtube"></use></svg></a>
+                    <a aria-label="Guarda i nostri video su YouTube" href="https://youtube.com/@antigravitaflyyoga" target="_blank" rel="noopener noreferrer"><svg><use href="images/social-icons.svg#youtube"></use></svg></a>
                 </div>
                 <div style="margin-top: 1rem;">
                      <a aria-label="Contattaci su WhatsApp" href="https://wa.me/message/JEWWIAPMS4LUH1" class="btn-prenota" target="_blank" rel="noopener noreferrer">Prenota online</a>

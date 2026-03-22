@@ -8,11 +8,12 @@
     <meta name="description"
         content="Consulta gli orari dei corsi di Fly Yoga Trieste. Corsi di gruppo e individuali. Prenota il tuo posto in amaca via WhatsApp o Instagram.">
     <link rel="icon" type="image/png" href="images/logobrand.png">
+    <link rel="apple-touch-icon" href="images/logobrand.png">
+    <meta name="theme-color" content="#003822">
+    <meta property="og:locale" content="it_IT">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/corsi.css">
-    <link rel="stylesheet" href="css/modal.css">
     <link rel="canonical" href="https://antigravitaflyyoga.it/corsi-yoga-trieste">
-    <link rel="preload" as="image" href="images/Corsi.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -36,54 +37,68 @@
       "@type": "WebPage",
       "name": "Orari Corsi di Fly Yoga Trieste - Calendario Corsi",
       "description": "Consulta gli orari dei corsi di Fly Yoga Trieste. Corsi di gruppo e individuali. Prenota il tuo posto in amaca via WhatsApp o Instagram.",
-      "url": "https://antigravitaflyyoga.it/corsi-yoga-trieste.html",
+      "url": "https://antigravitaflyyoga.it/corsi-yoga-trieste",
       "mainEntity": {
         "@type": "Service",
-        "name": "AntiGravità Fly Yoga Trieste",
-        "image": "https://antigravitaflyyoga.it/images/logo.png",
-        "@id": "https://antigravitaflyyoga.it",
-        "url": "https://antigravitaflyyoga.it",
-        "telephone": "+39 351 857 3757",
-        "email": "AntiGravita.Fly@gmail.com",
-        "priceRange": "€€",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Via Jacopo Cavalli 10/c",
-          "addressLocality": "Trieste",
-          "postalCode": "34123",
-          "addressCountry": "IT"
+        "serviceType": "Fly Yoga Classes",
+        "name": "Corsi di Fly Yoga Trieste",
+        "description": "Lezioni di gruppo e individuali di Fly Yoga a Trieste. Fino a 8 posti per gruppo. Prenotazione via WhatsApp.",
+        "provider": {
+          "@type": "YogaStudio",
+          "@id": "https://antigravitaflyyoga.it",
+          "name": "AntiGravità Fly Yoga Trieste"
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 45.6424316,
-          "longitude": 13.7768998
-        },
-        "sameAs": [
-          "https://www.facebook.com/people/Antigravita-Fly-yoga/61557041365775/",
-          "https://www.instagram.com/antigravita_flyyoga/#",
-          "https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu"
-        ],
-        "areaServed": {
-          "@type": "City",
-          "name": "Trieste"
-        },
-        "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.4876714559383!2d13.776899776191611!3d45.642431621012325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b7a62660a93%3A0x4611b97f6c66433!2sVia%20Jacopo%20Cavalli%2C%2010%2C%2034124%20Trieste%20TS%2C%20Italy!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s",
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "09:00",
-            "closes": "20:00"
-          }
-        ]
+        "areaServed": { "@type": "City", "name": "Trieste" },
+        "offers": {
+          "@type": "Offer",
+          "price": "20",
+          "priceCurrency": "EUR",
+          "description": "Entrata singola lezione di gruppo Fly Yoga"
+        }
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://antigravitaflyyoga.it"},
+        {"@type": "ListItem", "position": 2, "name": "Corsi Yoga Trieste", "item": "https://antigravitaflyyoga.it/corsi-yoga-trieste"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Devo avere esperienza per iniziare il Fly Yoga a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No, i nostri corsi di Fly Yoga a Trieste sono adatti a tutti i livelli, dai principianti assoluti ai praticanti avanzati. L'insegnante adatta ogni lezione al gruppo presente."}
+        },
+        {
+          "@type": "Question",
+          "name": "Come prenoto un posto ai corsi yoga Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Puoi prenotare facilmente via WhatsApp (+39 351 857 3757) o su Instagram @antigravita_flyyoga. Ti risponderemo rapidamente per confermare giorno e orario."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quanti posti ci sono per lezione?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Le lezioni di gruppo hanno un massimo di 8 posti per garantire attenzione individuale a ogni partecipante."}
+        },
+        {
+          "@type": "Question",
+          "name": "Fate anche lezioni private di yoga a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Sì, offriamo lezioni private individuali e duetto (2 persone) su appuntamento, con orari flessibili concordati direttamente con l'insegnante."}
+        },
+        {
+          "@type": "Question",
+          "name": "Cosa devo portare alla prima lezione di Fly Yoga?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Abbigliamento sportivo comodo che copre le caviglie e i polsi, acqua. Non serve nessuna attrezzatura — l'amaca è fornita dallo studio."}
+        }
+      ]
     }
     </script>
     <!-- Google tag (gtag.js) -->
@@ -111,7 +126,7 @@
                     <use href="images/social-icons.svg#facebook"></use>
                 </svg>
             </a>
-            <a href="https://www.instagram.com/antigravita_flyyoga/#" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/antigravita_flyyoga/" target="_blank" rel="noopener noreferrer"
                 aria-label="Seguici su Instagram">
                 <svg>
                     <use href="images/social-icons.svg#instagram"></use>
@@ -123,7 +138,7 @@
                     <use href="images/social-icons.svg#whatsapp"></use>
                 </svg>
             </a>
-            <a href="https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu" target="_blank"
+            <a href="https://youtube.com/@antigravitaflyyoga" target="_blank"
                 rel="noopener noreferrer" aria-label="Guarda i nostri video su YouTube">
                 <svg>
                     <use href="images/social-icons.svg#youtube"></use>
@@ -141,7 +156,7 @@
             <ul class="nav-menu">
                 <li><a href="/chi-siamo">Chi siamo</a></li>
                 <li><a href="/fly-yoga-trieste">Fly Yoga</a></li>
-                <li><a href="/corsi-yoga-trieste">Corsi Yoga Trieste</a></li>
+                <li><a href="/corsi-yoga-trieste" class="active" aria-current="page">Corsi Yoga Trieste</a></li>
                 <li><a href="/prezzi">Prezzi</a></li>
                 <li><a href="/massaggi-trieste">Massaggi</a></li>
                 <li><a href="/contatti">Contatti</a></li>
@@ -152,33 +167,118 @@
     <main>
         <section id="lezioni" class="page-section">
             <h1>Corsi Yoga Trieste: Orari</h1>
-            <div class="two-column">
-                <div class="content-column">
-                    <div class="bio-text">
-                        <h2>Orari dei nostri Corsi di Yoga Trieste</h2>
-                        <p>Siamo felici di offrire un orario comodo per i nostri <strong>corsi Yoga Trieste</strong>.
-                            Gli orari delle lezioni di gruppo di Fly Yoga Trieste sono riportati nella tabella
-                            sottostante, evidenziati in verde. Ogni gruppo è composto da 8 posti e raccomandiamo
-                            vivamente di prenotare il posto in anticipo per garantire la tua partecipazione al
-                            <strong>corsi Yoga</strong>.</p>
-                        <p>Le lezioni di gruppo sono un'ottima opportunità per sviluppare la tua pratica di <strong>Yoga
-                                Trieste</strong>, ricevere supporto dall'istruttore e allenare il corpo insieme a un
-                            gruppo di persone con gli stessi interessi. Prestiamo attenzione ad ogni partecipante e
-                            proponiamo allenamenti dinamici ed efficaci, adattati al tuo livello di preparazione.</p>
-                        <p>Oltre alle lezioni di gruppo, offriamo anche lezioni individuali e massaggi. Questo tempo è
-                            dedicato a chi preferisce un approccio personalizzato e desidera ricevere maggiore
-                            attenzione e supporto durante l'allenamento o la sessione di rilassamento. Per prenotare una
-                            lezione individuale o un massaggio, ti invitiamo a metterti in contatto con noi direttamente
-                            per scegliere l'orario più comodo.</p>
-                        <p>Per prenotare le lezioni, ti consigliamo di contattarci tramite <strong>WhatsApp</strong> o
-                            <strong>Instagram</strong>. Apprezziamo il tuo tempo e il tuo comfort, e siamo sempre pronti
-                            a offrirti orari flessibili per le tue sessioni e consulenze.</p>
-                        <p>Ti aspettiamo nel nostro studio per allenamenti utili e ispiratori!</p>
+            <div class="bio-text" style="max-width:900px;margin:0 auto 2rem;">
+                <h2>Orari dei nostri Corsi di Yoga Trieste</h2>
+                <p>Siamo felici di offrire un orario comodo per i nostri <strong>corsi Yoga Trieste</strong>.
+                    Gli orari delle lezioni di gruppo di Fly Yoga Trieste sono riportati nella tabella
+                    sottostante, evidenziati in verde. Ogni gruppo è composto da <strong>8 posti</strong> e raccomandiamo
+                    vivamente di prenotare il posto in anticipo per garantire la tua partecipazione ai
+                    <strong>corsi Yoga</strong>.</p>
+                <p>Le lezioni di gruppo sono un'ottima opportunità per sviluppare la tua pratica di <strong>Yoga
+                        Trieste</strong>, ricevere supporto dall'istruttore e allenare il corpo insieme a un
+                    gruppo di persone con gli stessi interessi. Prestiamo attenzione ad ogni partecipante e
+                    proponiamo allenamenti dinamici ed efficaci, adattati al tuo livello di preparazione.</p>
+                <p>Oltre alle lezioni di gruppo, offriamo anche <strong>lezioni individuali e di duetto</strong>. Questo tempo è
+                    dedicato a chi preferisce un approccio personalizzato e desidera ricevere maggiore
+                    attenzione e supporto durante l'allenamento. Per prenotare una
+                    lezione individuale o un massaggio, ti invitiamo a metterti in contatto con noi direttamente
+                    per scegliere l'orario più comodo.</p>
+                <p>Per prenotare le lezioni, ti consigliamo di contattarci tramite <strong>WhatsApp</strong> o
+                    <strong>Instagram</strong>. Apprezziamo il tuo tempo e il tuo comfort, e siamo sempre pronti
+                    a offrirti orari flessibili per le tue sessioni.</p>
+                <p>Ti aspettiamo nel nostro studio per allenamenti utili e ispiratori!</p>
+            </div>
+
+            <div class="schedule-wrapper" style="max-width:900px;margin:0 auto;overflow-x:auto;">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th class="time-header">Orario</th>
+                            <th>Lunedì</th>
+                            <th>Martedì</th>
+                            <th>Mercoledì</th>
+                            <th>Giovedì</th>
+                            <th>Venerdì</th>
+                            <th>Sabato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time-cell">10:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="fly-cell">FLY</td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">17:30</td>
+                            <td class="fly-cell">FLY</td>
+                            <td></td>
+                            <td class="fly-cell">FLY</td>
+                            <td class="fly-cell">FLY</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">18:00</td>
+                            <td></td>
+                            <td class="fly-cell">FLY</td>
+                            <td></td>
+                            <td></td>
+                            <td class="fly-cell">FLY</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">19:00</td>
+                            <td class="fly-cell">FLY</td>
+                            <td></td>
+                            <td></td>
+                            <td class="fly-cell">FLY</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top:1rem;font-size:.9rem;color:#666;text-align:center;">
+                    <span style="display:inline-block;width:16px;height:16px;background:#4caf50;border-radius:3px;vertical-align:middle;margin-right:6px;"></span>
+                    Lezione di Fly Yoga di gruppo (max 8 posti) — <a href="/prezzi" style="color:#003822;font-weight:bold;">Vedi prezzi</a>
+                </p>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section" style="max-width:900px;margin:3rem auto 0;">
+                <h2 style="color:#003822;margin-bottom:1.5rem;">Domande Frequenti sui Corsi Yoga Trieste</h2>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Devo avere esperienza per iniziare il Fly Yoga a Trieste?</button>
+                    <div class="faq-answer">
+                        <p>No, i nostri corsi di Fly Yoga a Trieste sono adatti a tutti i livelli, dai principianti assoluti ai praticanti avanzati. L'insegnante adatta ogni lezione al gruppo presente.</p>
                     </div>
                 </div>
-                <div class="image-column">
-                    <img src="images/Corsi.png" alt="I nostri corsi di Fly Yoga" class="feature-image"
-                        onclick="openImageModal(this.src)" width="800" height="1130" loading="lazy">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Come prenoto un posto ai corsi yoga Trieste?</button>
+                    <div class="faq-answer">
+                        <p>Puoi prenotare facilmente via <strong>WhatsApp</strong> (+39 351 857 3757) o su <strong>Instagram</strong> @antigravita_flyyoga. Ti risponderemo rapidamente per confermare giorno e orario.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Quanti posti ci sono per lezione?</button>
+                    <div class="faq-answer">
+                        <p>Le lezioni di gruppo hanno un massimo di <strong>8 posti</strong> per garantire attenzione individuale a ogni partecipante. È consigliato prenotare in anticipo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Fate anche lezioni private di yoga a Trieste?</button>
+                    <div class="faq-answer">
+                        <p>Sì, offriamo lezioni private individuali e duetto (2 persone) su appuntamento, con orari flessibili concordati direttamente con l'insegnante. <a href="/prezzi" style="color:#003822;">Vedi i prezzi.</a></p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Cosa devo portare alla prima lezione di Fly Yoga?</button>
+                    <div class="faq-answer">
+                        <p>Abbigliamento sportivo comodo che copre le caviglie e i polsi (per evitare irritazioni dall'amaca), acqua. Non serve nessuna attrezzatura — l'amaca è fornita dallo studio.</p>
+                    </div>
                 </div>
             </div>
 
@@ -192,32 +292,26 @@
                         style="color: #003822; font-weight: bold; text-decoration: underline;">Cos'è il Fly Yoga</a>
                     <a href="/massaggi-trieste"
                         style="color: #003822; font-weight: bold; text-decoration: underline;">Massaggi</a>
-                    <a href="/contatti" style="color: #003822; font-weight: bold; text-decoration: underline;">Prenota
-                        Ora</a>
+                    <a href="/contatti" style="color: #003822; font-weight: bold; text-decoration: underline;">Contatti</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage" alt="Ingrandimento orario corsi">
-    </div>
-
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-info">
-                <h2>AntiGravità Fly Yoga</h2>
-                <p><strong>Indirizzo:</strong> Via Jacopo Cavalli 10/c, 34123 Trieste</p>
+                <h3>AntiGravità Fly Yoga</h3>
+                <p><strong>Indirizzo:</strong> Via Jacopo Cavalli 10/c, 34129 Trieste</p>
                 <p><strong>Telefono:</strong> +39 351 857 3757</p>
                 <p><strong>Email:</strong> <a href="mailto:AntiGravita.Fly@gmail.com">AntiGravita.Fly@gmail.com</a></p>
-                <p><strong>Orari:</strong> Vedi <a href="corsi-yoga-trieste">Corsi Yoga Trieste</a></p>
+                <p><strong>Orari:</strong> Vedi <a href="/corsi-yoga-trieste">Corsi Yoga Trieste</a></p>
                 <div class="social-icons footer-social">
                     <a href="https://www.facebook.com/people/Antigravita-Fly-yoga/61557041365775/" target="_blank"
                         rel="noopener noreferrer" aria-label="Seguici su Facebook"><svg>
                             <use href="images/social-icons.svg#facebook"></use>
                         </svg></a>
-                    <a href="https://www.instagram.com/antigravita_flyyoga/#" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/antigravita_flyyoga/" target="_blank" rel="noopener noreferrer"
                         aria-label="Seguici su Instagram"><svg>
                             <use href="images/social-icons.svg#instagram"></use>
                         </svg></a>
@@ -225,7 +319,7 @@
                         aria-label="Contattaci su WhatsApp"><svg>
                             <use href="images/social-icons.svg#whatsapp"></use>
                         </svg></a>
-                    <a href="https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu" target="_blank"
+                    <a href="https://youtube.com/@antigravitaflyyoga" target="_blank"
                         rel="noopener noreferrer" aria-label="Guarda i nostri video su YouTube"><svg>
                             <use href="images/social-icons.svg#youtube"></use>
                         </svg></a>

@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prenota Yoga e Massaggi Trieste | Contatti</title>
+    <title>Contatti AntiGravità — Yoga e Massaggi Trieste | Prenota</title>
     <meta name="description"
         content="Contattaci per prenotare la tua lezione di Yoga Trieste o massaggio Trieste. Dove siamo, telefono e orari del Centro AntiGravità.">
     <link rel="icon" type="image/png" href="images/logobrand.png">
+    <link rel="apple-touch-icon" href="images/logobrand.png">
+    <meta name="theme-color" content="#003822">
+    <meta property="og:locale" content="it_IT">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/contatti.css">
     <link rel="canonical" href="https://antigravitaflyyoga.it/contatti">
@@ -34,12 +37,12 @@
       "@type": "ContactPage",
       "name": "Prenota Yoga e Massaggi Trieste | Contatti",
       "description": "Contattaci per prenotare la tua lezione di Yoga Trieste o massaggio Trieste. Dove siamo, telefono e orari del Centro AntiGravità.",
-      "url": "https://antigravitaflyyoga.it/contatti.html",
+      "url": "https://antigravitaflyyoga.it/contatti",
       "mainEntity": {
-        "@type": "ContactPage",
+        "@type": ["YogaStudio", "HealthAndBeautyBusiness"],
+        "@id": "https://antigravitaflyyoga.it",
         "name": "AntiGravità Fly Yoga Trieste",
         "image": "https://antigravitaflyyoga.it/images/logo.png",
-        "@id": "https://antigravitaflyyoga.it",
         "url": "https://antigravitaflyyoga.it",
         "telephone": "+39 351 857 3757",
         "email": "AntiGravita.Fly@gmail.com",
@@ -48,7 +51,7 @@
           "@type": "PostalAddress",
           "streetAddress": "Via Jacopo Cavalli 10/c",
           "addressLocality": "Trieste",
-          "postalCode": "34123",
+          "postalCode": "34129",
           "addressCountry": "IT"
         },
         "geo": {
@@ -57,31 +60,53 @@
           "longitude": 13.7768998
         },
         "sameAs": [
-        "https://www.facebook.com/people/Antigravita-Fly-yoga/61557041365775/",
-        "https://www.instagram.com/antigravita_flyyoga/#",
-        "https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu"
-      ],
-      "areaServed": {
-        "@type": "City",
-        "name": "Trieste"
-      },
-      "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.4876714559383!2d13.776899776191611!3d45.642431621012325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b7a62660a93%3A0x4611b97f6c66433!2sVia%20Jacopo%20Cavalli%2C%2010%2C%2034124%20Trieste%20TS%2C%20Italy!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s",
-      "openingHoursSpecification": [
+          "https://www.facebook.com/people/Antigravita-Fly-yoga/61557041365775/",
+          "https://www.instagram.com/antigravita_flyyoga/",
+          "https://youtube.com/@antigravitaflyyoga"
+        ],
+        "areaServed": { "@type": "City", "name": "Trieste" },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          }
+        ]
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "09:00",
-          "closes": "20:00"
+          "@type": "Question",
+          "name": "Come prenotare una lezione di yoga o un massaggio a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Puoi prenotare via WhatsApp al +39 351 857 3757 o su Instagram @antigravita_flyyoga. Rispondiamo rapidamente per confermare giorno e orario."}
+        },
+        {
+          "@type": "Question",
+          "name": "Dove si trova AntiGravità Fly Yoga a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Lo studio si trova in Via Jacopo Cavalli 10/c, 34129 Trieste. Siamo aperti dal lunedì al sabato dalle 09:00 alle 20:00."}
+        },
+        {
+          "@type": "Question",
+          "name": "Qual è il numero di telefono del centro yoga di Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Puoi contattarci al +39 351 857 3757 via telefono o WhatsApp, oppure via email a AntiGravita.Fly@gmail.com."}
         }
       ]
     }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://antigravitaflyyoga.it"},
+        {"@type": "ListItem", "position": 2, "name": "Contatti", "item": "https://antigravitaflyyoga.it/contatti"}
+      ]
     }
     </script>
     <!-- Google tag (gtag.js) -->
@@ -109,7 +134,7 @@
                     <use href="images/social-icons.svg#facebook"></use>
                 </svg>
             </a>
-            <a href="https://www.instagram.com/antigravita_flyyoga/#" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/antigravita_flyyoga/" target="_blank" rel="noopener noreferrer"
                 aria-label="Seguici su Instagram">
                 <svg>
                     <use href="images/social-icons.svg#instagram"></use>
@@ -121,7 +146,7 @@
                     <use href="images/social-icons.svg#whatsapp"></use>
                 </svg>
             </a>
-            <a href="https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu" target="_blank"
+            <a href="https://youtube.com/@antigravitaflyyoga" target="_blank"
                 rel="noopener noreferrer" aria-label="Guarda i nostri video su YouTube">
                 <svg>
                     <use href="images/social-icons.svg#youtube"></use>
@@ -159,12 +184,12 @@
                     <div class="contact-card">
                         <h2>AntiGravità Fly Yoga</h2>
                         <address>
-                            <p><strong>Indirizzo:</strong><br>Via Jacopo Cavalli 10/c<br>34123 – Trieste</p>
+                            <p><strong>Indirizzo:</strong><br>Via Jacopo Cavalli 10/c<br>34129 – Trieste</p>
                             <p><strong>Cellulare:</strong><br>+39 351 857 3757</p>
                             <p><strong>C.F.:</strong><br>90172850324</p>
                             <p><strong>Email:</strong><br><a
                                     href="mailto:AntiGravita.Fly@gmail.com">AntiGravita.Fly@gmail.com</a></p>
-                            <p><strong>Orari:</strong> Vedi <a href="corsi-yoga-trieste">Corsi Yoga Trieste</a></p>
+                            <p><strong>Orari:</strong> Vedi <a href="/corsi-yoga-trieste">Corsi Yoga Trieste</a></p>
                         </address>
                         <div class="social-links">
                             <h2>Seguici sui social</h2>
@@ -177,7 +202,7 @@
                                     </svg>
                                 </a>
                                 <a aria-label="Seguici su Instagram"
-                                    href="https://www.instagram.com/antigravita_flyyoga/#" target="_blank"
+                                    href="https://www.instagram.com/antigravita_flyyoga/" target="_blank"
                                     rel="noopener noreferrer">
                                     <svg>
                                         <use href="images/social-icons.svg#instagram"></use>
@@ -190,7 +215,7 @@
                                     </svg>
                                 </a>
                                 <a aria-label="Guarda i nostri video su YouTube"
-                                    href="https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu" target="_blank"
+                                    href="https://youtube.com/@antigravitaflyyoga" target="_blank"
                                     rel="noopener noreferrer">
                                     <svg>
                                         <use href="images/social-icons.svg#youtube"></use>
@@ -208,6 +233,40 @@
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section-inline" style="max-width:900px;margin:3rem auto 0;">
+                <h2 style="color:#003822;margin-bottom:1.5rem;">Domande Frequenti</h2>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Come prenotare una lezione di yoga o un massaggio a Trieste?</button>
+                    <div class="faq-answer">
+                        <p>Puoi prenotare via <strong>WhatsApp</strong> al +39 351 857 3757 o su <strong>Instagram</strong> @antigravita_flyyoga. Rispondiamo rapidamente per confermare giorno e orario.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Dove si trova AntiGravità Fly Yoga a Trieste?</button>
+                    <div class="faq-answer">
+                        <p>Lo studio si trova in <strong>Via Jacopo Cavalli 10/c, 34129 Trieste</strong>. Siamo aperti dal <strong>lunedì al sabato dalle 09:00 alle 20:00</strong>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Qual è il numero di telefono del centro yoga di Trieste?</button>
+                    <div class="faq-answer">
+                        <p>Puoi contattarci al <strong>+39 351 857 3757</strong> via telefono o WhatsApp, oppure via email a <a href="mailto:AntiGravita.Fly@gmail.com" style="color:#003822;">AntiGravita.Fly@gmail.com</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Internal Linking Section -->
+            <div class="internal-links" style="text-align: center; margin-top: 3rem;">
+                <p>Scopri i nostri servizi:</p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                    <a href="/fly-yoga-trieste" style="color: #003822; font-weight: bold; text-decoration: underline;">Fly Yoga Trieste</a>
+                    <a href="/corsi-yoga-trieste" style="color: #003822; font-weight: bold; text-decoration: underline;">Orari Corsi</a>
+                    <a href="/massaggi-trieste" style="color: #003822; font-weight: bold; text-decoration: underline;">Massaggi</a>
+                    <a href="/prezzi" style="color: #003822; font-weight: bold; text-decoration: underline;">Prezzi</a>
                 </div>
             </div>
         </section>

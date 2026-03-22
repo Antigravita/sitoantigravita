@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoga e Massaggi Trieste | Prezzi e Abbonamenti</title>
+    <title>Prezzi Yoga e Massaggi Trieste | Abbonamenti AntiGravità</title>
     <meta name="description"
         content="Consulta i prezzi dei nostri corsi Yoga Trieste e dei massaggi. Pacchetti convenienti e abbonamenti su misura per il tuo benessere.">
     <link rel="icon" type="image/png" href="images/logobrand.png">
+    <link rel="apple-touch-icon" href="images/logobrand.png">
+    <meta name="theme-color" content="#003822">
+    <meta property="og:locale" content="it_IT">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/prezzi.css">
-    <link rel="stylesheet" href="css/modal.css">
     <link rel="canonical" href="https://antigravitaflyyoga.it/prezzi">
-    <link rel="preload" as="image" href="images/Listinoprezzi.jpg">
-
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://antigravitaflyyoga.it/prezzi">
@@ -36,12 +36,12 @@
       "@type": "WebPage",
       "name": "Yoga e Massaggi Trieste | Prezzi e Abbonamenti",
       "description": "Consulta i prezzi dei nostri corsi Yoga Trieste e dei massaggi. Pacchetti convenienti e abbonamenti su misura per il tuo benessere.",
-      "url": "https://antigravitaflyyoga.it/prezzi.html",
+      "url": "https://antigravitaflyyoga.it/prezzi",
       "mainEntity": {
-        "@type": "YogaStudio",
+        "@type": ["YogaStudio", "HealthAndBeautyBusiness"],
+        "@id": "https://antigravitaflyyoga.it",
         "name": "AntiGravità Fly Yoga Trieste",
         "image": "https://antigravitaflyyoga.it/images/logo.png",
-        "@id": "https://antigravitaflyyoga.it",
         "url": "https://antigravitaflyyoga.it",
         "telephone": "+39 351 857 3757",
         "email": "AntiGravita.Fly@gmail.com",
@@ -50,7 +50,7 @@
           "@type": "PostalAddress",
           "streetAddress": "Via Jacopo Cavalli 10/c",
           "addressLocality": "Trieste",
-          "postalCode": "34123",
+          "postalCode": "34129",
           "addressCountry": "IT"
         },
         "geo": {
@@ -60,30 +60,78 @@
         },
         "sameAs": [
           "https://www.facebook.com/people/Antigravita-Fly-yoga/61557041365775/",
-          "https://www.instagram.com/antigravita_flyyoga/#",
-          "https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu"
+          "https://www.instagram.com/antigravita_flyyoga/",
+          "https://youtube.com/@antigravitaflyyoga"
         ],
-        "areaServed": {
-          "@type": "City",
-          "name": "Trieste"
-        },
-        "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.4876714559383!2d13.776899776191611!3d45.642431621012325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b7a62660a93%3A0x4611b97f6c66433!2sVia%20Jacopo%20Cavalli%2C%2010%2C%2034124%20Trieste%20TS%2C%20Italy!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s",
+        "areaServed": { "@type": "City", "name": "Trieste" },
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
             "opens": "09:00",
             "closes": "20:00"
           }
-        ]
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Listino Prezzi Fly Yoga e Massaggi",
+          "itemListElement": [
+            {"@type": "Offer", "name": "Entrata singola lezione di gruppo", "price": "20", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "4 Lezioni al Mese (gruppo)", "price": "60", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "8 Lezioni al Mese (gruppo)", "price": "80", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "12 Lezioni al Mese (gruppo)", "price": "100", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "10 Entrate (3 mesi)", "price": "130", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "Lezione privata singola", "price": "40", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "Pacchetto 5 lezioni private", "price": "150", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "Pacchetto 10 lezioni private", "price": "350", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "Lezione duetto (2 persone)", "price": "60", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "Pacchetto 5 lezioni duetto", "price": "280", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "Pacchetto 10 lezioni duetto", "price": "540", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "Iscrizione Annuale", "price": "35", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "Massaggio Olistico (1 ora)", "price": "40", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "Massaggio Pietre Calde / Hot Stone (1 ora)", "price": "50", "priceCurrency": "EUR"},
+            {"@type": "Offer", "name": "Fly Massaggio (1 ora)", "price": "50", "priceCurrency": "EUR"}
+          ]
+        }
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto costa una lezione di Fly Yoga a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "L'entrata singola a una lezione di gruppo di Fly Yoga costa 20€. Gli abbonamenti mensili partono da 60€ per 4 lezioni al mese fino a 130€ per 10 entrate valide 3 mesi."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto costano i massaggi a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "I massaggi durano 1 ora: Massaggio Olistico 40€, Pietre Calde / Hot Stone 50€, Fly Massaggio in amaca 50€."}
+        },
+        {
+          "@type": "Question",
+          "name": "Ci sono abbonamenti per lo yoga a Trieste?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Sì, offriamo vari abbonamenti mensili: 4 lezioni a 60€, 8 lezioni a 80€, 12 lezioni a 100€. Per le lezioni private: 5 lezioni a 150€, 10 lezioni a 350€. È richiesta un'iscrizione annuale di 35€."}
+        },
+        {
+          "@type": "Question",
+          "name": "È necessaria l'iscrizione annuale?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Sì, per accedere ai corsi è richiesta un'iscrizione annuale di 35€. L'iscrizione dà accesso a tutte le lezioni di gruppo e private per un anno intero."}
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://antigravitaflyyoga.it"},
+        {"@type": "ListItem", "position": 2, "name": "Prezzi", "item": "https://antigravitaflyyoga.it/prezzi"}
+      ]
     }
     </script>
     <!-- Google tag (gtag.js) -->
@@ -111,7 +159,7 @@
                     <use href="images/social-icons.svg#facebook"></use>
                 </svg>
             </a>
-            <a href="https://www.instagram.com/antigravita_flyyoga/#" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/antigravita_flyyoga/" target="_blank" rel="noopener noreferrer"
                 aria-label="Seguici su Instagram">
                 <svg>
                     <use href="images/social-icons.svg#instagram"></use>
@@ -123,7 +171,7 @@
                     <use href="images/social-icons.svg#whatsapp"></use>
                 </svg>
             </a>
-            <a href="https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu" target="_blank"
+            <a href="https://youtube.com/@antigravitaflyyoga" target="_blank"
                 rel="noopener noreferrer" aria-label="Guarda i nostri video su YouTube">
                 <svg>
                     <use href="images/social-icons.svg#youtube"></use>
@@ -142,7 +190,7 @@
                 <li><a href="/chi-siamo">Chi siamo</a></li>
                 <li><a href="/fly-yoga-trieste">Fly Yoga</a></li>
                 <li><a href="/corsi-yoga-trieste">Corsi Yoga Trieste</a></li>
-                <li><a href="/prezzi" class="active">Prezzi</a></li>
+                <li><a href="/prezzi" class="active" aria-current="page">Prezzi</a></li>
                 <li><a href="/massaggi-trieste">Massaggi</a></li>
                 <li><a href="/contatti">Contatti</a></li>
             </ul>
@@ -152,10 +200,121 @@
     <main>
         <section id="prezzi" class="page-section">
             <h1>Prezzi Fly Yoga e Massaggi Trieste</h1>
-            <div class="pricing-container">
-                <img src="images/Listinoprezzi.webp"
-                    alt="Listino Prezzi AntiGravità Fly Yoga Trieste: Lezione singola, abbonamenti mensili e trimestrali, massaggi olistici e decontratturanti"
-                    class="pricing-image" onclick="openImageModal(this.src)" width="1200" height="1698" loading="lazy">
+
+            <div class="pricing-tables">
+
+                <!-- GRUPPO -->
+                <div class="price-category">
+                    <h2 class="price-category-title">Abbonamento Mensile — Gruppo <span class="badge">fino a 8 persone</span></h2>
+                    <table class="price-table">
+                        <thead>
+                            <tr><th>Formula</th><th>Prezzo</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Entrata singola</td><td class="price-val">20 €</td></tr>
+                            <tr><td>4 Lezioni al Mese</td><td class="price-val">60 €</td></tr>
+                            <tr><td>8 Lezioni al Mese</td><td class="price-val">80 €</td></tr>
+                            <tr><td>12 Lezioni al Mese</td><td class="price-val">100 €</td></tr>
+                            <tr><td>10 Entrate (3 mesi)</td><td class="price-val">130 €</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- PRIVATO -->
+                <div class="price-category">
+                    <h2 class="price-category-title">Lezioni Private</h2>
+                    <table class="price-table">
+                        <thead>
+                            <tr><th>Formula</th><th>Prezzo</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1 Lezione singola</td><td class="price-val">40 €</td></tr>
+                            <tr><td>Pacchetto 5 lezioni</td><td class="price-val">150 €</td></tr>
+                            <tr><td>Pacchetto 10 lezioni</td><td class="price-val">350 €</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- DUETTO -->
+                <div class="price-category">
+                    <h2 class="price-category-title">Lezioni Duetto Private <span class="badge">2 persone</span></h2>
+                    <table class="price-table">
+                        <thead>
+                            <tr><th>Formula</th><th>Prezzo</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1 Lezione duetto</td><td class="price-val">60 €</td></tr>
+                            <tr><td>Pacchetto 5 lezioni</td><td class="price-val">280 €</td></tr>
+                            <tr><td>Pacchetto 10 lezioni</td><td class="price-val">540 €</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ABBONAMENTO MENSILE PRIVATO -->
+                <div class="price-category">
+                    <h2 class="price-category-title">Abbonamento Mensile — Lezioni Private</h2>
+                    <table class="price-table">
+                        <thead>
+                            <tr><th>Formula</th><th>Prezzo</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1 Lezione settimanale</td><td class="price-val">160 €</td></tr>
+                            <tr><td>2 Lezioni settimanali</td><td class="price-val">300 €</td></tr>
+                            <tr><td>3 Lezioni settimanali</td><td class="price-val">450 €</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- MASSAGGI -->
+                <div class="price-category massaggi-center">
+                    <h2 class="price-category-title">Massaggi Trieste <span class="badge">1 ora</span></h2>
+                    <table class="price-table">
+                        <thead>
+                            <tr><th>Tipo di Massaggio</th><th>Prezzo</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Olistico</td><td class="price-val">40 €</td></tr>
+                            <tr><td>Pietre Calde / Hot Stone</td><td class="price-val">50 €</td></tr>
+                            <tr><td>Fly Massaggio</td><td class="price-val">50 €</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ISCRIZIONE -->
+                <div class="price-category iscrizione-card">
+                    <p class="iscrizione-label">Iscrizione Annuale</p>
+                    <p class="iscrizione-price">35 €</p>
+                </div>
+
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section-inline" style="max-width:900px;margin:3rem auto 0;">
+                <h2 style="color:#003822;margin-bottom:1.5rem;">Domande Frequenti sui Prezzi</h2>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Quanto costa una lezione di Fly Yoga a Trieste?</button>
+                    <div class="faq-answer">
+                        <p>L'entrata singola a una lezione di gruppo costa <strong>20€</strong>. Gli abbonamenti mensili partono da <strong>60€</strong> per 4 lezioni al mese fino a <strong>130€</strong> per 10 entrate valide 3 mesi.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Quanto costano i massaggi a Trieste?</button>
+                    <div class="faq-answer">
+                        <p>Tutti i massaggi durano 1 ora: Massaggio Olistico <strong>40€</strong>, Pietre Calde / Hot Stone <strong>50€</strong>, Fly Massaggio in amaca <strong>50€</strong>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Ci sono abbonamenti per lo yoga a Trieste?</button>
+                    <div class="faq-answer">
+                        <p>Sì: abbonamento da <strong>4 lezioni/mese 60€</strong>, 8 lezioni/mese 80€, 12 lezioni/mese 100€. Lezioni private: pacchetto 5 lezioni 150€, 10 lezioni 350€.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">È necessaria l'iscrizione annuale?</button>
+                    <div class="faq-answer">
+                        <p>Sì, è richiesta un'<strong>iscrizione annuale di 35€</strong>, valida per tutte le lezioni di gruppo e private per un intero anno.</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Internal Linking Section -->
@@ -173,25 +332,20 @@
         </section>
     </main>
 
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage" alt="Ingrandimento listino prezzi">
-    </div>
-
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-info">
-                <h2>AntiGravità Fly Yoga</h2>
-                <p><strong>Indirizzo:</strong> Via Jacopo Cavalli 10/c, 34123 Trieste</p>
+                <h3>AntiGravità Fly Yoga</h3>
+                <p><strong>Indirizzo:</strong> Via Jacopo Cavalli 10/c, 34129 Trieste</p>
                 <p><strong>Telefono:</strong> +39 351 857 3757</p>
                 <p><strong>Email:</strong> <a href="mailto:AntiGravita.Fly@gmail.com">AntiGravita.Fly@gmail.com</a></p>
-                <p><strong>Orari:</strong> Vedi <a href="corsi-yoga-trieste">Corsi Yoga Trieste</a></p>
+                <p><strong>Orari:</strong> Vedi <a href="/corsi-yoga-trieste">Corsi Yoga Trieste</a></p>
                 <div class="social-icons footer-social">
                     <a href="https://www.facebook.com/people/Antigravita-Fly-yoga/61557041365775/" target="_blank"
                         rel="noopener noreferrer" aria-label="Seguici su Facebook"><svg>
                             <use href="images/social-icons.svg#facebook"></use>
                         </svg></a>
-                    <a href="https://www.instagram.com/antigravita_flyyoga/#" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/antigravita_flyyoga/" target="_blank" rel="noopener noreferrer"
                         aria-label="Seguici su Instagram"><svg>
                             <use href="images/social-icons.svg#instagram"></use>
                         </svg></a>
@@ -199,7 +353,7 @@
                         aria-label="Contattaci su WhatsApp"><svg>
                             <use href="images/social-icons.svg#whatsapp"></use>
                         </svg></a>
-                    <a href="https://youtube.com/@antigravitaflyyoga?si=RKzEpfLxFcAZvHqu" target="_blank"
+                    <a href="https://youtube.com/@antigravitaflyyoga" target="_blank"
                         rel="noopener noreferrer" aria-label="Guarda i nostri video su YouTube"><svg>
                             <use href="images/social-icons.svg#youtube"></use>
                         </svg></a>
