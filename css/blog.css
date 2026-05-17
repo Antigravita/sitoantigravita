@@ -1,0 +1,55 @@
+/* ===== BLOG — Griglia Card ===== */
+.blog-hero{max-width:900px;margin:0 auto 2.5rem;text-align:center}
+.blog-hero h1{margin-bottom:.75rem}
+.blog-hero p{color:#555;font-size:1.05rem;line-height:1.6}
+
+.blog-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.75rem;
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 1.25rem;
+}
+.blog-card{
+  background:#fff;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 2px 14px rgba(0,0,0,.08);
+  display:flex;
+  flex-direction:column;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.blog-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.blog-card a.card-link{text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%}
+.blog-card .card-img{width:100%;height:auto;display:block;background:#eee}
+.blog-card .card-body{padding:1rem 1.2rem 1.15rem;display:flex;flex-direction:column;flex:1}
+.blog-card .card-tag{
+  display:inline-block;align-self:flex-start;
+  background:#eef3f0;color:#003822;
+  font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+  padding:.25rem .55rem;border-radius:6px;margin-bottom:.55rem;
+}
+.blog-card .card-title{font-size:1.08rem;line-height:1.32;color:#003822;margin:0 0 .45rem;font-weight:700;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.blog-card .card-excerpt{font-size:.88rem;color:#555;line-height:1.5;margin:0 0 .85rem;flex:1;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.blog-card .card-meta{display:flex;align-items:center;justify-content:space-between;font-size:.82rem;color:#888}
+.blog-card .card-readmore{color:#003822;font-weight:700}
+
+/* ===== Paginazione ===== */
+.blog-pagination{
+  display:flex;justify-content:center;align-items:center;gap:.5rem;
+  max-width:1200px;margin:3rem auto 0;flex-wrap:wrap;
+}
+.blog-pagination a,.blog-pagination span{
+  min-width:42px;padding:.55rem .8rem;border-radius:8px;text-align:center;
+  text-decoration:none;font-weight:600;font-size:.95rem;
+}
+.blog-pagination a{color:#003822;border:1px solid #d6e0da;background:#fff}
+.blog-pagination a:hover{background:#eef3f0}
+.blog-pagination .current{background:#003822;color:#fff;border:1px solid #003822}
+.blog-pagination .disabled{color:#bbb;border:1px solid #eee;background:#fafafa;cursor:default}
+
+@media(max-width:1024px){.blog-grid{grid-template-columns:repeat(2,1fr);gap:1.4rem}}
+@media(max-width:680px){.blog-grid{grid-template-columns:1fr;gap:1.25rem;padding:0 1rem}}

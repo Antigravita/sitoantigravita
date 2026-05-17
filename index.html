@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga Trieste e Massaggi Trieste | Centro AntiGravità</title>
-    <meta name="description" content="Scopri il miglior centro Yoga Trieste e Massaggi Trieste: Corsi di Fly Yoga e trattamenti olistici per il tuo benessere. Prenota ora.">
+    <meta name="description" content="Centro di Fly Yoga e Massaggi a Trieste. Corsi per tutti i livelli e trattamenti su misura per corpo e mente, guidati da Anna. Scrivici su WhatsApp.">
     <link rel="icon" type="image/png" href="images/logobrand.png">
     <link rel="apple-touch-icon" href="images/logobrand.png">
     <meta name="theme-color" content="#003822">
     <meta property="og:locale" content="it_IT">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/common.css?v=r3">
+    <link rel="stylesheet" href="css/index.css?v=r3">
     <link rel="canonical" href="https://antigravitaflyyoga.it/">
     <link rel="preload" as="image" href="images/yoga-trieste-fly.webp">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AntiGravità Fly Yoga & Massaggi Trieste">
     <meta property="og:url" content="https://antigravitaflyyoga.it/">
     <meta property="og:title" content="Yoga Trieste e Massaggi Trieste | Centro AntiGravità">
-    <meta property="og:description" content="Scopri il miglior centro Yoga Trieste e Massaggi Trieste. Corsi di Fly Yoga e trattamenti olistici per il tuo benessere. Prenota ora.">
+    <meta property="og:description" content="Centro di Fly Yoga e Massaggi a Trieste. Corsi per tutti i livelli e trattamenti su misura, guidati da Anna. Scrivici su WhatsApp.">
     <meta property="og:image" content="https://antigravitaflyyoga.it/images/yoga-trieste-fly.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://antigravitaflyyoga.it/">
     <meta property="twitter:title" content="Yoga Trieste e Massaggi Trieste | Centro AntiGravità">
-    <meta property="twitter:description" content="Scopri il miglior centro Yoga Trieste e Massaggi Trieste. Corsi di Fly Yoga e trattamenti olistici per il tuo benessere. Prenota ora.">
+    <meta property="twitter:description" content="Centro di Fly Yoga e Massaggi a Trieste. Corsi per tutti i livelli e trattamenti su misura, guidati da Anna. Scrivici su WhatsApp.">
     <meta property="twitter:image" content="https://antigravitaflyyoga.it/images/yoga-trieste-fly.jpg">
 
     <script type="application/ld+json">
@@ -129,6 +133,9 @@
       "@type": "WebPage",
       "name": "Yoga Trieste e Massaggi Trieste | Centro AntiGravità",
       "url": "https://antigravitaflyyoga.it",
+      "datePublished": "2024-03-10",
+      "dateModified": "2026-05-17",
+      "inLanguage": "it-IT",
       "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": ["h1", ".subtitle", ".faq-section"]
@@ -145,6 +152,7 @@
     }
     </script>
 <!-- Google tag (gtag.js) -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E198L16E51"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -188,6 +196,7 @@
                 <li><a href="/corsi-yoga-trieste">Corsi Yoga Trieste</a></li>
                 <li><a href="/prezzi">Prezzi</a></li>
                 <li><a href="/massaggi-trieste">Massaggi</a></li>
+                <li><a href="/blog">Blog</a></li>
                 <li><a href="/contatti">Contatti</a></li>
             </ul>
         </nav>
@@ -195,48 +204,47 @@
 
     <main>
         <section id="home" class="page-section">
-            <h1>Yoga Trieste e Massaggi Trieste: Fly Yoga e Benessere Mentale e Fisico</h1>
+            <h1>Yoga Trieste e Massaggi Trieste: Fly Yoga e Benessere per Corpo e Mente</h1>
             <p class="subtitle">
-                Il centro AntiGravità dove <span class="keyword-highlight">Yoga Trieste</span> e <span class="keyword-highlight">Massaggi Trieste</span> si uniscono in un unico percorso di salute e armonia.
+                AntiGravità è lo studio dove <span class="keyword-highlight">Yoga Trieste</span> e <span class="keyword-highlight">Massaggi Trieste</span> camminano insieme: un unico spazio per ritrovare leggerezza, energia ed equilibrio.
             </p>
             
             <div class="content-wrapper">
                 <div class="video-container">
-                    <video id="hero-video" loop muted playsinline class="hero-video" poster="images/yoga-trieste-fly.jpg" preload="none" aria-label="Video di presentazione studio AntiGravità">
-                        <!-- Video source loaded via JS -->
-                    </video>
+                    <video id="hero-video" loop muted playsinline class="hero-video" poster="images/yoga-trieste-fly.jpg" preload="none" aria-label="Video di presentazione studio AntiGravità"></video>
+                    <button type="button" id="video-play" class="video-play" aria-label="Riproduci il video di presentazione">
+                        <span class="video-play-icon" aria-hidden="true">&#9658;</span>
+                        <span class="video-play-text">Guarda il video</span>
+                    </button>
                 </div>
             </div>
             <script>
-                window.addEventListener('load', function() {
-                    // Defer video loading to ensure it doesn't affect PageSpeed
-                    setTimeout(function() {
-                        var video = document.getElementById('hero-video');
+                (function () {
+                    var btn = document.getElementById('video-play');
+                    var video = document.getElementById('hero-video');
+                    if (!btn || !video) return;
+                    btn.addEventListener('click', function () {
                         var source = document.createElement('source');
                         source.src = 'hero-video.mp4';
                         source.type = 'video/mp4';
                         video.appendChild(source);
                         video.load();
-                        var playPromise = video.play();
-                        if (playPromise !== undefined) {
-                            playPromise.catch(function(error) {
-                                console.log('Auto-play was prevented:', error);
-                            });
-                        }
-                    }, 1500);
-                });
+                        video.play().catch(function () {});
+                        btn.remove();
+                    }, { once: true });
+                })();
             </script>
 
             <div class="checkerboard-section">
                 <!-- Row 1: Text - Image -->
                 <div class="checkerboard-row">
                     <div class="text-col">
-                        <h2>Fly Yoga: L'Evoluzione dello Yoga Trieste</h2>
+                        <h2>Fly Yoga: lo Yoga Trieste che ti solleva</h2>
                         <p>
-                            Se cerchi un corso di <span class="keyword-highlight">Yoga Trieste</span> diverso dal solito, il Fly Yoga è la risposta. Utilizzando l'amaca, uniamo i principi dello yoga tradizionale alla decompressione vertebrale.
+                            Se cerchi un corso di <span class="keyword-highlight">Yoga Trieste</span> diverso dal solito, il Fly Yoga è quello che fa per te. Con il sostegno dell'amaca uniamo i principi dello yoga tradizionale alla decompressione della colonna: il peso del corpo si alleggerisce e ogni movimento diventa più fluido.
                         </p>
                         <p>
-                            Questa pratica prepara perfettamente il corpo ai benefici del <span class="keyword-highlight">Massaggio Trieste</span>, migliorando la flessibilità e la postura in modo rapido e sicuro.
+                            È una pratica che prepara bene il corpo anche ai benefici di un buon <span class="keyword-highlight">Massaggio Trieste</span>: migliora flessibilità e postura passo dopo passo, sempre in sicurezza e senza forzature.
                         </p>
                         <a href="/fly-yoga-trieste" class="btn-prenota">Scopri il Fly Yoga Trieste</a>
                     </div>
@@ -248,13 +256,13 @@
                 <!-- Row 2: Image - Text (Visual: Image Left, Text Right) -->
                 <div class="checkerboard-row reverse">
                     <div class="text-col">
-                        <h2>Massaggi Trieste: Il Tocco che Rigenera</h2>
+                        <h2>Massaggi Trieste: il tocco che rimette in equilibrio</h2>
                         <p>
-                            Non consideriamo i <span class="keyword-highlight">Massaggi Trieste</span> come un semplice trattamento estetico, ma come parte integrante della salute.
-                            Dopo una sessione di <span class="keyword-highlight">Yoga Trieste</span>, i muscoli sono ricettivi e pronti per essere trattati in profondità.
+                            Per me i <span class="keyword-highlight">Massaggi Trieste</span> non sono solo un momento di coccola: sono una parte concreta del prendersi cura di sé.
+                            Dopo una sessione di <span class="keyword-highlight">Yoga Trieste</span> il corpo è morbido e ricettivo, e il lavoro manuale arriva più in profondità.
                         </p>
                         <p>
-                            Offriamo percorsi personalizzati di <span class="keyword-highlight">Massaggi Trieste</span> — dal decontratturante al rilassante — per prolungare l'effetto benefico della pratica fisica e ritrovare energia vitale.
+                            Per questo costruisco percorsi su misura — dal massaggio decontratturante a quello rilassante — così da prolungare l'effetto della pratica e farti ritrovare energia e respiro.
                         </p>
                         <a href="/massaggi-trieste" class="btn-prenota">Esplora i Massaggi Trieste</a>
                     </div>
@@ -266,14 +274,14 @@
                 <!-- Row 3: Text - Image -->
                 <div class="checkerboard-row">
                     <div class="text-col">
-                        <h2>Yoga Trieste: Respirazione e Consapevolezza</h2>
+                        <h2>Yoga Trieste: respiro e consapevolezza</h2>
                         <p>
-                            La nostra scuola di <span class="keyword-highlight">Yoga Trieste</span> offre uno spazio accogliente per riconnettersi con se stessi.
-                            Praticare costantemente, alternando il lavoro a terra e in volo con cicli di <span class="keyword-highlight">Massaggi Trieste</span>,
-                            è il segreto per mantenere un corpo sano e una mente serena nel tempo.
+                            Lo studio di <span class="keyword-highlight">Yoga Trieste</span> AntiGravità è uno spazio accogliente dove tornare ad ascoltarsi.
+                            Praticare con continuità, alternando il lavoro a terra e in volo a cicli di <span class="keyword-highlight">Massaggi Trieste</span>,
+                            è il modo più semplice per mantenere nel tempo un corpo libero e una mente più calma.
                         </p>
                         <p>
-                            Ogni lezione è un'opportunità per esplorare i propri limiti e superarli con dolcezza, guidati da insegnanti esperti e appassionati.
+                            Ogni lezione è un piccolo passo per conoscere i propri limiti e superarli con dolcezza, accompagnata da una guida attenta e presente.
                         </p>
                         <a href="/corsi-yoga-trieste" class="btn-prenota">Orari dei Corsi Yoga Trieste</a>
                     </div>
@@ -285,13 +293,13 @@
                 <!-- Row 4: Image - Text (Visual: Image Left, Text Right) -->
                 <div class="checkerboard-row reverse">
                     <div class="text-col">
-                        <h2>Eccellenza e Professionalità</h2>
+                        <h2>Cura, competenza e attenzione alla persona</h2>
                         <p>
-                            Siamo orgogliosi di essere pionieri del <span class="keyword-highlight">Fly Yoga Trieste</span> sul territorio.
-                            La nostra missione è offrire l'eccellenza, unendo la saggezza millenaria dello yoga alle tecniche più moderne dei <span class="keyword-highlight">Massaggi Trieste</span>.
+                            Ho portato a Trieste il <span class="keyword-highlight">Fly Yoga Trieste</span> perché credo in una pratica che unisce la radice antica dello yoga al lavoro manuale dei <span class="keyword-highlight">Massaggi Trieste</span>.
+                            Due strade diverse con lo stesso obiettivo: farti stare bene davvero.
                         </p>
                         <p>
-                            La nostra insegnante Anna vi guiderà con competenza e dedizione. Venite a trovarci per trasformare il vostro benessere in una priorità quotidiana.
+                            Mi chiamo Anna e ti accompagno io, lezione dopo lezione, con ascolto e competenza. Vieni a conoscere lo studio: il tuo benessere merita uno spazio tutto suo.
                         </p>
                         <a href="/chi-siamo" class="btn-prenota">Chi Siamo</a>
                     </div>
@@ -303,13 +311,13 @@
 
             <!-- SEO Text Block -->
             <div class="seo-text-block" style="margin-top: 4rem; padding: 2rem; background-color: #f9f9f9; border-radius: 10px;">
-                <h3 style="text-align: center; margin-bottom: 1.5rem;">Un Centro Unico per il Tuo Equilibrio</h3>
+                <h3 style="text-align: center; margin-bottom: 1.5rem;">Un unico spazio per il tuo equilibrio a Trieste</h3>
                 <p>
-                    AntiGravità è il punto d'incontro tra discipline complementari. Qui, <span class="keyword-highlight">Fly Yoga Trieste</span> e terapie manuali dialogano costantemente per offrirti il massimo risultato.
+                    AntiGravità nasce dall'incontro di due discipline che si completano: qui il <span class="keyword-highlight">Fly Yoga Trieste</span> e il lavoro manuale si parlano di continuo, perché il risultato di uno sostiene quello dell'altro.
                 </p>
                 <p>
-                    Se cerchi l'eccellenza nei <span class="keyword-highlight">Massaggi Trieste</span> e la professionalità nello <span class="keyword-highlight">Yoga Trieste</span>,
-                    troverai un metodo che mette al centro la persona nella sua interezza, curando ogni dettaglio del tuo percorso di rinascita.
+                    Se cerchi <span class="keyword-highlight">Massaggi Trieste</span> fatti con cura e un percorso serio di <span class="keyword-highlight">Yoga Trieste</span>,
+                    qui trovi un metodo che mette al centro te, non un esercizio standard: ascolto, ritmo personale e attenzione a ogni dettaglio del tuo benessere.
                 </p>
             </div>
         </section>
@@ -414,12 +422,7 @@
                 </div>
             </div>
             <div class="footer-map">
-                <iframe title="Mappa della sede AntiGravità Fly Yoga"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.4876714559383!2d13.776899776191611!3d45.642431621012325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b7a62660a93%3A0x4611b97f6c66433!2sVia%20Jacopo%20Cavalli%2C%2010%2C%2034124%20Trieste%20TS%2C%20Italy!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <div class="map-placeholder" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.4876714559383!2d13.776899776191611!3d45.642431621012325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b7a62660a93%3A0x4611b97f6c66433!2sVia%20Jacopo%20Cavalli%2C%2010%2Fc%2C%2034129%20Trieste%20TS%2C%20Italy!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" data-title="Mappa della sede AntiGravità Fly Yoga" role="button" tabindex="0" aria-label="Carica la mappa: Via Jacopo Cavalli 10/c, Trieste" onclick="loadMap(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();loadMap(this);}"><div class="map-placeholder-content"><p>Via Jacopo Cavalli 10/c &mdash; 34129 Trieste</p><button type="button" class="btn-prenota" onclick="event.stopPropagation();loadMap(this.closest('.map-placeholder'));return false;"><span>Carica la mappa</span></button></div></div>
             </div>
         </div>
     </footer>

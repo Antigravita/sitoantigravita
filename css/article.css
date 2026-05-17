@@ -1,0 +1,46 @@
+/* ===== BLOG — Articolo singolo ===== */
+.article-wrap{max-width:780px;margin:0 auto;padding:0 1.25rem}
+.article-breadcrumb{font-size:.85rem;color:#8a958f;margin-bottom:1.25rem}
+.article-breadcrumb a{color:#003822;text-decoration:none;font-weight:600}
+.article-breadcrumb a:hover{text-decoration:underline}
+.article-breadcrumb .sep{margin:0 .4rem;color:#bcc7c1}
+
+.article-header h1{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.25;color:#003822;margin:0 0 .9rem}
+.article-meta{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;font-size:.88rem;color:#888;margin-bottom:1.6rem}
+.article-meta .tag{background:#eef3f0;color:#003822;font-weight:700;text-transform:uppercase;font-size:.72rem;letter-spacing:.04em;padding:.28rem .6rem;border-radius:6px}
+
+.article-cover{display:block;width:100%;max-width:480px;height:auto;margin:0 auto 2rem;border-radius:14px}
+
+.article-body{font-size:1.05rem;line-height:1.75;color:#333}
+.article-body h2{font-size:clamp(1.3rem,3vw,1.7rem);color:#003822;margin:2.4rem 0 .9rem}
+.article-body h3{font-size:1.2rem;color:#003822;margin:1.8rem 0 .7rem}
+.article-body p{margin:0 0 1.15rem}
+.article-body ul,.article-body ol{margin:0 0 1.3rem;padding-left:1.4rem}
+.article-body li{margin-bottom:.55rem}
+.article-body a{color:#0a6b3f;font-weight:700;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}
+.article-body a:hover{color:#003822;background:#eef3f0}
+.article-body strong{color:#1a1a1a}
+.article-body blockquote{
+  border-left:4px solid #003822;background:#f7faf8;
+  margin:1.6rem 0;padding:1rem 1.3rem;border-radius:0 8px 8px 0;
+  font-style:italic;color:#444;
+}
+
+.article-cta{
+  background:#003822;color:#fff;border-radius:14px;
+  padding:2rem 1.75rem;text-align:center;margin:3rem 0 1rem;
+}
+.article-cta h3{color:#fff;margin:0 0 .6rem;font-size:1.35rem}
+.article-cta p{color:#dfe9e3;margin:0 0 1.3rem;font-size:1rem}
+.article-cta .btn-prenota{background:#fff;color:#003822}
+
+.article-related{max-width:780px;margin:2.5rem auto 0;padding:0 1.25rem}
+.article-related h2{font-size:1.3rem;color:#003822;margin-bottom:1rem}
+.article-related .rel-links{display:flex;flex-wrap:wrap;gap:.8rem}
+.article-related .rel-links a{
+  color:#003822;font-weight:600;text-decoration:none;
+  border:1px solid #d6e0da;border-radius:8px;padding:.55rem .9rem;font-size:.92rem;
+}
+.article-related .rel-links a:hover{background:#eef3f0}
+
+@media(max-width:680px){.article-body{font-size:1rem}.article-cta{padding:1.6rem 1.2rem}}
