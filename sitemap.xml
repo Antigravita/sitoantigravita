@@ -147,4 +147,46 @@
     <priority>0.8</priority>
     <image:image><image:loc>https://antigravitaflyyoga.it/images/massaggio-new-2.webp</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://antigravitaflyyoga.it/yoga-mal-di-schiena-trieste</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://antigravitaflyyoga.it/images/yoga-trieste-fly.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://antigravitaflyyoga.it/yoga-cervicale-trieste</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://antigravitaflyyoga.it/images/anna0.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://antigravitaflyyoga.it/massaggio-cervicale-trieste</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://antigravitaflyyoga.it/images/massaggio-new-1.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://antigravitaflyyoga.it/percorsi/schiena</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://antigravitaflyyoga.it/images/yoga-trieste-fly.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://antigravitaflyyoga.it/percorsi/stress</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://antigravitaflyyoga.it/images/massaggio-new-2.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://antigravitaflyyoga.it/percorsi/postura</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://antigravitaflyyoga.it/images/anna0.webp</image:loc></image:image>
+  </url>
 </urlset>
