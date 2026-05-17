@@ -44,3 +44,15 @@
 .article-related .rel-links a:hover{background:#eef3f0}
 
 @media(max-width:680px){.article-body{font-size:1rem}.article-cta{padding:1.6rem 1.2rem}}
+
+/* ===== FAQ accordion (blog articoli) — mancava in article.css ===== */
+.faq-section-inline{max-width:780px;margin:2.5rem auto 0}
+.faq-section-inline h2{color:#003822;margin-bottom:1.2rem}
+.faq-section-inline .faq-item{background:#fff;border:1px solid #e4ddcf;border-radius:10px;margin-bottom:1rem;box-shadow:0 2px 8px rgba(0,0,0,.06);overflow:hidden}
+.faq-section-inline .faq-question{width:100%;background:0 0;border:0;padding:1.2rem 1.5rem;text-align:left;font-family:inherit;font-size:1.02rem;font-weight:600;color:#003822;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:background .2s}
+.faq-section-inline .faq-question:hover{background:#f9f7f3}
+.faq-section-inline .faq-question::after{content:'+';font-size:1.5rem;font-weight:300;color:#0a6b3f;flex-shrink:0;transition:transform .3s;line-height:1}
+.faq-section-inline .faq-question.active::after{transform:rotate(45deg)}
+.faq-section-inline .faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-section-inline .faq-answer p{padding:0 1.5rem 1.2rem;color:#555;line-height:1.7;margin:0}
+.faq-section-inline .faq-answer p a{color:#0a6b3f;font-weight:600}
