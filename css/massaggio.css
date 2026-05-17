@@ -1,1 +1,26 @@
 .faq-section-inline .faq-item{background:#fff;border-radius:10px;margin-bottom:1rem;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden}.faq-section-inline .faq-question{width:100%;background:0 0;border:0;padding:1.2rem 1.5rem;text-align:left;font-size:1rem;font-weight:600;color:#003822;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s}.faq-section-inline .faq-question:hover{background:#f9f7f3}.faq-section-inline .faq-question::after{content:'+';font-size:1.5rem;font-weight:300;flex-shrink:0;margin-left:1rem;transition:transform .3s}.faq-section-inline .faq-question.active::after{transform:rotate(45deg)}.faq-section-inline .faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease}.faq-section-inline .faq-answer p{padding:0 1.5rem 1.2rem;color:#555;line-height:1.7}.massage-list ul{list-style:none;padding:0}.massage-list li{margin-bottom:1.5rem;padding-left:1rem;border-left:3px solid #003822}.fly-massage-box{background-color:#f9f9f9;padding:1.5rem;border-radius:10px;border:1px solid #eee;margin-top:1rem}.two-column{display:flex;gap:4rem;align-items:flex-start;margin-top:2rem;max-width:1200px;margin-left:auto;margin-right:auto}.content-column{flex:1;padding-right:2rem}.bio-text p{margin-bottom:1.5rem;line-height:1.6;font-size:1.1rem;color:#333}.bio-text h3{font-size:1.8rem;margin-bottom:1.5rem;color:#5c4f3d}.bio-text h4{font-size:1.4rem;margin-bottom:1rem;color:#5c4f3d}.collage-container{flex:1;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:auto auto;gap:15px;padding:0;max-width:600px;margin:0 auto;position:sticky;top:2rem}.collage-img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.1);transition:transform .3s ease;display:block}.collage-img:hover{transform:scale(1.02);z-index:10}.collage-img:nth-child(1),.collage-img:nth-child(2),.collage-img:nth-child(3),.collage-img:nth-child(4){transform:none;margin:0;z-index:1}@media screen and (max-width:960px){.two-column{flex-direction:column-reverse;gap:2rem}.content-column{padding-right:0}.collage-container{width:100%;max-width:600px;grid-template-columns:repeat(2,1fr);gap:10px;position:static;margin:0 auto}}@media screen and (max-width:480px){.bio-text h3{font-size:1.5rem}.collage-container{gap:8px}}
+
+/* ===== Massaggi hub + spoke (rebrand cluster) ===== */
+#massaggio h1{text-align:center}
+#massaggio .subtitle{text-align:center;max-width:760px;margin-left:auto;margin-right:auto;color:#5d655c}
+.m-intro{max-width:760px;margin:1.4rem auto 0;text-align:center}
+.m-intro p{font-size:1.08rem;line-height:1.8;color:#5d655c;margin-bottom:1.05rem}
+.m-cards-sec{max-width:1100px;margin:3.2rem auto 0;text-align:center;padding:0 1rem}
+.m-cards-sec h2{color:#003822;margin-bottom:.5rem}
+.m-cards-sub{color:#5d655c;margin-bottom:2rem}
+.m-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;text-align:left}
+.m-card{display:flex;flex-direction:column;background:#fff;border:1px solid #e4ddcf;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 2px 12px rgba(2,42,32,.07);transition:transform .25s ease,box-shadow .25s ease}
+.m-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(2,42,32,.13)}
+.m-card img{width:100%;height:auto;display:block;background:#eee}
+.m-card-body{padding:1.1rem 1.3rem 1.4rem;display:flex;flex-direction:column;gap:.4rem}
+.m-card-body strong{font-family:'Fraunces',Georgia,serif;font-size:1.25rem;color:#003822;line-height:1.25}
+.m-card-desc{font-size:.95rem;color:#5d655c;line-height:1.55}
+.m-card-cta{margin-top:.5rem;font-size:.92rem;color:#003822;font-weight:700}
+/* spoke: immagine cover (sorgenti 1:1) */
+.image-column{flex:0 0 360px;align-self:flex-start;position:sticky;top:90px}
+.feature-image{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:16px;box-shadow:0 10px 30px rgba(2,42,32,.12);display:block}
+@media(max-width:1024px){
+  .m-cards{grid-template-columns:1fr;gap:1.2rem}
+  .image-column{flex:none;width:100%;max-width:420px;margin:0 auto;position:static;top:auto}
+}
+@media(max-width:560px){.m-card-body strong{font-size:1.12rem}}

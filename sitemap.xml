@@ -119,4 +119,32 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://antigravitaflyyoga.it/images/blog/prima-lezione-fly-yoga.webp</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://antigravitaflyyoga.it/massaggi/olistico-trieste</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://antigravitaflyyoga.it/images/massaggi-trieste-relax.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://antigravitaflyyoga.it/massaggi/decontratturante-trieste</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://antigravitaflyyoga.it/images/massaggio-new-1.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://antigravitaflyyoga.it/massaggi/pietre-calde-trieste</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://antigravitaflyyoga.it/images/massaggio-new-3.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://antigravitaflyyoga.it/massaggi/fly-massage-trieste</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://antigravitaflyyoga.it/images/massaggio-new-2.webp</image:loc></image:image>
+  </url>
 </urlset>
