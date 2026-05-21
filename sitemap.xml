@@ -50,7 +50,7 @@
     <image:image><image:loc>https://antigravitaflyyoga.it/images/yoga-trieste-fly.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://antigravitaflyyoga.it/blog</loc>
+    <loc>https://antigravitaflyyoga.it/blog/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
