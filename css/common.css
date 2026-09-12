@@ -7,3 +7,14 @@
 body{font-family:'Inter','Segoe UI',Tahoma,Geneva,Verdana,sans-serif}
 h1,h2,h3,h4{font-family:'Fraunces',Georgia,'Times New Roman',serif}
 .map-container{min-height:400px}
+
+/* Footer link block: gives every page a stable internal link to the sections
+   that were reachable from one page only. */
+.footer-links{display:flex;flex-wrap:wrap;gap:2rem;margin-top:2rem;padding-top:1.5rem;border-top:1px solid #e4ddcf}
+.footer-links-col h4{font-family:'Fraunces',Georgia,serif;font-size:1rem;color:#5c4f3d;margin-bottom:.5rem}
+.footer-links-col ul{list-style:none;margin:0;padding:0}
+.footer-links-col li{margin-bottom:.35rem;font-size:.95rem;line-height:1.4}
+.footer-links-col a{color:#004494;text-decoration:none}
+.footer-links-col a:hover{text-decoration:underline}
+.footer-links-col [aria-current="page"]{color:#5d655c;font-weight:600}
+@media screen and (max-width:768px){.footer-links{gap:1.5rem;justify-content:center;text-align:center}}
