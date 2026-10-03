@@ -25,6 +25,11 @@
   margin:1.6rem 0;padding:1rem 1.3rem;border-radius:0 8px 8px 0;
   font-style:italic;color:#444;
 }
+.article-body .table-wrap{overflow-x:auto;margin:1.4rem 0 1.6rem}
+.article-body table{width:100%;border-collapse:collapse;font-size:.95rem;line-height:1.5}
+.article-body th,.article-body td{padding:.65rem .8rem;border-bottom:1px solid #e4ddcf;text-align:left;vertical-align:top}
+.article-body thead th{background:#eef4f0;color:#003822;font-weight:700}
+.article-body tbody th{color:#003822;font-weight:600;white-space:nowrap}
 
 .article-cta{
   background:#003822;color:#fff;border-radius:14px;
