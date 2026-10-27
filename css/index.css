@@ -3,3 +3,8 @@
 .massaggi-collage img{width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.12);transition:transform .25s ease}
 .massaggi-collage img:hover{transform:translateY(-3px) scale(1.02)}
 @media(max-width:768px){.massaggi-collage{max-width:300px}}
+.home-services{max-width:1000px;margin:3rem auto 0}
+.home-services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1rem}
+.home-services-grid h3{margin-top:0}
+.home-services-grid ul{list-style:none;padding-left:0}
+@media(max-width:768px){.home-services-grid{grid-template-columns:1fr}}
