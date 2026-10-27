@@ -25,3 +25,4 @@ h1,h2,h3,h4{font-family:'Fraunces',Georgia,'Times New Roman',serif}
 .m-table tbody tr:last-child td{border-bottom:0}
 @media(max-width:560px){.m-table{font-size:.88rem}.m-table th,.m-table td{padding:.55rem .5rem}}
 .m-guide h2[id]{scroll-margin-top:110px}
+.m-table td:first-child strong{white-space:nowrap}
